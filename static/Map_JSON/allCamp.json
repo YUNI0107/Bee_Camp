@@ -1,0 +1,2085 @@
+{
+    "north":[
+        {
+            "place_name": "半島秘境" ,
+            "number": "01",
+            "glamping": true,
+            "big_img": "north/A_big_img.jpg",
+            "img" : [
+                "north/A_img_1.jpg",
+                "north/A_img_2.jpg",
+                "north/A_img_3.jpg",
+                "north/A_img_4.jpg",
+                "north/A_img_5.jpg"
+            ],
+            "place": "新北市白沙灣",
+            "google_map": [25.287723, 121.511026],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": true
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": true
+            },
+            "equipment": [
+                "衛浴",
+                "吹風機",
+                "空調設備",
+                "夜燈",
+                "飯店寢具",
+                "含早點"
+            ],
+            "links":{
+                "web": "https://ps.heytalent.net/",
+                "facebook": "https://www.facebook.com/secretisland.villa/",
+                "ins": "https://www.instagram.com/secretisland_villa/"
+            },
+            "key_des": "新推星空帳伴繁星入眠",
+            "des": "藏身北海岸坐擁無敵海景的半島秘境，主打免裝備奢華露營，全新推出媲美約旦的半透明星空帳，伴著星空入眠，還有蒙古跨海搬來8頂蒙古包、土耳其進口神殿帳，隨處都可享受無敵海景！"
+            ,
+            "book_web":{
+                "web": "https://ps.heytalent.net/glamping",
+                "phone": "02-2636-5087"
+            },
+            "price":[
+                {
+                    "desc": "半島蓮花帳",
+                    "price": 15000,
+                    "weekdays_price": 4500,
+                    "holiday_price": 5500
+                },
+                {
+                    "desc": "秘境鑽石帳",
+                    "price": 15000,
+                    "weekdays_price": 4500,
+                    "holiday_price": 5500
+                },
+                {
+                    "desc": "經典神殿帳",
+                    "price": 12000,
+                    "weekdays_price": 3500,
+                    "holiday_price": 4500
+                }
+            ]
+        },
+        {
+            "place_name": "那一村" ,
+            "number": "02",
+            "glamping": true,
+            "big_img": "north/B_big_img.jpg",
+            "img" : [
+                "north/B_img_1.jpg",
+                "north/B_img_2.jpg",
+                "north/B_img_3.jpg",
+                "north/B_img_4.jpg",
+                "north/B_img_5.jpg"
+            ],
+            "place": "宜蘭縣礁溪鄉",
+            "google_map": [24.786305, 121.682092],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": true
+            },
+            "equipment": [
+                "一大床",
+                "衛浴",
+                "備品",
+                "夜燈",
+                "含早點（下午茶、晚餐依方案）"
+            ],
+            "links":{
+                "web": "https://www.nayivilla.com.tw/",
+                "facebook": "https://www.facebook.com/secretisland.villa/",
+                "ins": "https://www.instagram.com/secretisland_villa/"
+            },
+            "key_des": "新推星空帳伴繁星入眠",
+            "des": "藏身北海岸坐擁無敵海景的半島秘境，主打免裝備奢華露營，全新推出媲美約旦的半透明星空帳，伴著星空入眠，還有蒙古跨海搬來8頂蒙古包、土耳其進口神殿帳，隨處都可享受無敵海景！"
+            ,
+            "book_web":{
+                "web": "https://www.nayivilla.com.tw/",
+                "phone": "03-9221715"
+            },
+            "price":[
+                {
+                    "desc": "豪華露營兩人帳",
+                    "price": 10000,
+                    "weekdays_price": 4000,
+                    "holiday_price": 5600
+                },
+                {
+                    "desc": "豪華露營四人帳",
+                    "price": 14000,
+                    "weekdays_price": 5600,
+                    "holiday_price": 8200
+                },
+                {
+                    "desc": "豪華露營四床帳",
+                    "price": 14000,
+                    "weekdays_price": 5600,
+                    "holiday_price": 8200
+                }
+            ]
+        },
+        {
+            "place_name": "天ㄟ露營車" ,
+            "number": "03",
+            "glamping": true,
+            "big_img": "north/C_big_img.jpg",
+            "img" : [
+                "north/C_img_1.jpg",
+                "north/C_img_2.jpg",
+                "north/C_img_3.jpg",
+                "north/C_img_4.jpg",
+                "north/C_img_5.jpg"
+            ],
+            "place": "宜蘭縣冬山鄉",
+            "google_map": [24.645685, 121.733578],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": true
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "獨立衛浴",
+                "冷暖氣",
+                "電視機",
+                "冰箱"
+            ],
+            "links":{
+                "web": "https://www.nayivilla.com.tw/",
+                "facebook": "https://www.facebook.com/nayivilla039221715/",
+                "ins": "https://www.instagram.com/nayi_villa3953/"
+            },
+            "key_des": "三面環山、一面環河絕佳位置",
+            "des": "2018年開幕就擁有極高人氣的「那一村」，擁有三面環山、一面環河的絕佳地理位置，看得到坡地、山林、湖泊等天然地景資源，白天也能見到台灣獼猴、台灣藍鵲、白鷺鷥等野生動物。提供2~4人帳，充滿綠意的大自然森林風格，連隋棠搶先入住體驗，每帳都有獨立衛浴，讓小旅行不被外界打擾。"
+            ,
+            "book_web":{
+                "web": "https://traiwan.com/official/booking.php?id=tanacamper",
+                "phone": "095-6699-666"
+            },
+            "price":[
+                {
+                    "desc": "基本入住/2人",
+                    "price": 6600,
+                    "weekdays_price": 3600,
+                    "holiday_price": 4800
+                },
+                {
+                    "desc": "12歲以上/人",
+                    "price": 1500,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                },
+                {
+                    "desc": "7-12歲國小學童",
+                    "price": 800,
+                    "weekdays_price": 600,
+                    "holiday_price": 600
+                }
+            ]
+        },
+        {
+            "place_name": "東風綠活" ,
+            "number": "04",
+            "glamping": true,
+            "big_img": "north/D_big_img.jpg",
+            "img" : [
+                "north/D_img_1.jpg",
+                "north/D_img_2.jpg",
+                "north/D_img_3.jpg",
+                "north/D_img_4.jpg",
+                "north/D_img_5.jpg"
+            ],
+            "place": "宜蘭縣冬山鄉",
+            "google_map": [24.645685, 121.733578],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": true
+            },
+            "equipment": [
+                "獨立衛浴",
+                "冷暖氣",
+                "電視機",
+                "冰箱"
+            ],
+            "links":{
+                "web": "https://www.nayivilla.com.tw/",
+                "facebook": "https://www.facebook.com/nayivilla039221715/",
+                "ins": "https://www.instagram.com/nayi_villa3953/"
+            },
+            "key_des": "三面環山、一面環河絕佳位置",
+            "des": "2018年開幕就擁有極高人氣的「那一村」，擁有三面環山、一面環河的絕佳地理位置，看得到坡地、山林、湖泊等天然地景資源，白天也能見到台灣獼猴、台灣藍鵲、白鷺鷥等野生動物。提供2~4人帳，充滿綠意的大自然森林風格，連隋棠搶先入住體驗，每帳都有獨立衛浴，讓小旅行不被外界打擾。"
+            ,
+            "book_web":{
+                "web": "https://traiwan.com/official/booking.php?id=tanacamper",
+                "phone": "095-6699-666"
+            },
+            "price":[
+                {
+                    "desc": "基本入住/2人",
+                    "price": 6600,
+                    "weekdays_price": 3600,
+                    "holiday_price": 4800
+                },
+                {
+                    "desc": "12歲以上/人",
+                    "price": 1500,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                },
+                {
+                    "desc": "7-12歲國小學童",
+                    "price": 800,
+                    "weekdays_price": 600,
+                    "holiday_price": 600
+                }
+            ]
+        },
+        {
+            "place_name": "三峽皇后鎮森林" ,
+            "number": "01",
+            "glamping": false,
+            "big_img": "north/A_big_img.jpg",
+            "img" : [
+                "north/A_img_1.jpg",
+                "north/A_img_2.jpg",
+                "north/A_img_3.jpg",
+                "north/A_img_4.jpg",
+                "north/A_img_5.jpg"
+            ],
+            "place": "新北市三峽區",
+            "google_map": [24.918446333642922, 121.43680531067983],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": true
+            },
+            "equipment": [
+                "野炊空間",
+                "吹風機",
+                "乾溼分離衛浴",
+                "無線上網",
+                "可接電"
+            ],
+            "links":{
+                "web": "http://www.queen-village.com/index.html",
+                "facebook": "https://www.facebook.com/%E7%9A%87%E5%90%8E%E9%8E%AE%E6%A3%AE%E6%9E%97-188768484468704/",
+                "ins": null
+            },
+            "key_des": "清澈如鏡的的竹坑溪與群山環抱",
+            "des": "山林裡，一種貼近自然的住宿方式，跟著四季變化感受山林，春季的涼爽、夏季的火金姑、秋季的滿月蟬鳴、冬季的夜空觀星，用心感受著大自然的趣味。"
+            ,
+            "book_web":{
+                "web": "http://www.queen-village.com/play_sanxia.html",
+                "phone": "02-2668 2592"
+            },
+            "price":[
+                {
+                    "desc": "一營一車位",
+                    "price": 15000,
+                    "weekdays_price": 900,
+                    "holiday_price": 1500
+                }
+            ]
+        },
+        {
+            "place_name": "泰雅巴萊部落村" ,
+            "number": "02",
+            "glamping": false,
+            "big_img": "north/B_big_img.jpg",
+            "img" : [
+                "north/B_img_1.jpg",
+                "north/B_img_2.jpg",
+                "north/B_img_3.jpg",
+                "north/B_img_4.jpg",
+                "north/B_img_5.jpg"
+            ],
+            "place": "新北市烏來區",
+            "google_map": [24.860837162682145, 121.54189059205548],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": true
+            },
+            "equipment": [
+                "野炊",
+                "原住民 DIY",
+                "桌椅",
+                "冰箱"
+            ],
+            "links":{
+                "web": "http://cathy061199.pixnet.net/blog",
+                "facebook": "https://www.facebook.com/%E6%B3%B0%E9%9B%85%E5%B7%B4%E8%90%8A%E9%83%A8%E8%90%BD%E6%9D%91-423160577735579/?ref=page_internal",
+                "ins": null
+            },
+            "key_des": "自然原始泰雅體驗",
+            "des": "「泰雅巴萊」採預約制，比較適合團體一起前往，不論是家庭旅遊、親子旅遊還是朋友聚會，都可以一次滿足，除了感受原住民的生活文化之外，還提供了露營的服務，位於烏來的山中部落，所以園區有提供原住民射箭活動與竹筒飯製作體驗。"
+            ,
+            "book_web":{
+                "web": null,
+                "phone": "02-26617551"
+            },
+            "price":[
+                {
+                    "desc": "雨棚區",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                }
+            ]
+        },
+        {
+            "place_name": "華中露營場" ,
+            "number": "03",
+            "glamping": false,
+            "big_img": "north/C_big_img.jpg",
+            "img" : [
+                "north/C_img_1.jpg",
+                "north/C_img_2.jpg",
+                "north/C_img_3.jpg",
+                "north/C_img_4.jpg",
+                "north/C_img_5.jpg"
+            ],
+            "place": "台北市萬華區",
+            "google_map": [25.01544748709872, 121.49667922507776],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "餐桌椅出租",
+                "睡袋出租",
+                "高級烤肉架出租",
+                "草地帳篷無水電"
+            ],
+            "links":{
+                "web": "http://xn--fiq57vhrvoqqq6v.tw/index.php",
+                "facebook": null,
+                "ins": null
+            },
+            "key_des": "大都會內的公園式露營區",
+            "des": "位於台北市萬華區的「華中露營場」是目前少有的大都會內的公園式露營區，腹地廣大綠草如茵，週邊運動、休閒、育樂設施齊全，河濱自行車道貫穿整個營區，通往台北各知名觀光景點，吃喝玩樂樣樣有，非常適合工作繁忙或是首次露營的你。"
+            ,
+            "book_web":{
+                "web": "http://xn--fiq57vhrvoqqq6v.tw/contact-5515.php",
+                "phone": "02-23076929"
+            },
+            "price":[
+                {
+                    "desc": "第一拖車區露營位 / 輛",
+                    "price": 1200,
+                    "weekdays_price": 8000,
+                    "holiday_price": 1200
+                },
+                {
+                    "desc": "第二汽車露營位 / 座",
+                    "price": 900,
+                    "weekdays_price": 500,
+                    "holiday_price": 900
+                },
+                {
+                    "desc": "草地帳篷營位 / 位",
+                    "price": 650,
+                    "weekdays_price": 400,
+                    "holiday_price": 650
+                }
+            ]
+        },
+        {
+            "place_name": "貴子坑露營場" ,
+            "number": "04",
+            "glamping": false,
+            "big_img": "north/D_big_img.jpg",
+            "img" : [
+                "north/D_img_1.jpg",
+                "north/D_img_2.jpg",
+                "north/D_img_3.jpg",
+                "north/D_img_4.jpg",
+                "north/D_img_5.jpg"
+            ],
+            "place": "台北市北投區",
+            "google_map": [25.154193883268004, 121.49158635087379],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": true
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": true
+            },
+            "equipment": [
+                "淋浴間",
+                "弱電系統",
+                "活動式野餐平台"
+            ],
+            "links":{
+                "web": "https://www.geo.gov.taipei/mp10504a/Default.aspx",
+                "facebook": "https://www.facebook.com/%E8%B2%B4%E5%AD%90%E5%9D%91%E9%9C%B2%E7%87%9F%E5%A0%B4-194936130547031/",
+                "ins": null
+            },
+            "key_des": "環境教育場所的最佳機會",
+            "des": "位於台北市北投區的「貴子坑露營場」，除了臨近登山步道、水土保持教室與湖泊，距離熱鬧的北投溫泉區也很近，適合喜愛自然的親子前來共度週末時光，貴子坑露營場屬於免費公有營地非常熱門，記得要事先線上預約，"
+            ,
+            "book_web":{
+                "web": "http://gisweb.taipei.gov.tw/TPCamp/AGuzi.aspx",
+                "phone": "02-28932324"
+            },
+            "price":[
+                {
+                    "desc": "無資料",
+                    "price": 0,
+                    "weekdays_price": 0,
+                    "holiday_price": 0
+                }
+            ]
+        }
+
+    ],
+    "central":[
+        {
+            "place_name": "柚香露露" ,
+            "number": "05",
+            "glamping": true,
+            "big_img": "central/A_big_img.jpg",
+            "img" : [
+                "central/A_img_1.jpg",
+                "central/A_img_2.jpg",
+                "central/A_img_3.jpg",
+                "central/A_img_4.jpg",
+                "central/A_img_5.jpg"
+            ],
+            "place": "苗栗縣銅鑼鄉",
+            "google_map": [24.532130, 120.805507],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "寢室帳",
+                "衛浴",
+                "羽絨枕被",
+                "手電筒",
+                "球形兩用燈",
+                "廚具",
+                "公用冷藏冰箱"
+            ],
+            "links":{
+                "web": "https://yioauchamp.tw/",
+                "facebook": "https://www.facebook.com/nayivilla039221715/",
+                "ins": "https://www.instagram.com/nayi_villa3953/"
+            },
+            "key_des": "天空地闊，可見「三台疊翠」",
+            "des": "帶著想露營的心，來柚香露露吧！冬暖夏涼科技棉材質帳篷、天幕、獨立筒氣墊床、暖墊、高級羽絨枕被、溫暖營燈、躺椅、休閒桌、卡式爐、火台、笛音壼、取水壼、鍋、碗、盤，通通都有。"
+            ,
+            "book_web":{
+                "web": "https://www.delphus.io/yioauchamp/booking",
+                "phone": null
+            },
+            "price":[
+                {
+                    "desc": "極簡白宮帳/4人",
+                    "price": 7500,
+                    "weekdays_price": 7500,
+                    "holiday_price": 8500
+                },
+                {
+                    "desc": "野牛帳/4人",
+                    "price": 10500,
+                    "weekdays_price": 10500,
+                    "holiday_price": 12000
+                },
+                {
+                    "desc": "鐘型帳/4人",
+                    "price": 11500,
+                    "weekdays_price": 11500,
+                    "holiday_price": 13000
+                },
+                {
+                    "desc": "山屋行宮帳/5人",
+                    "price": 15000,
+                    "weekdays_price": 15000,
+                    "holiday_price": 17000
+                },
+                {
+                    "desc": "毛孩白宮帳/2人1狗",
+                    "price": 6500,
+                    "weekdays_price": 6500,
+                    "holiday_price": 7500
+                }
+            ]
+        },
+        {
+            "place_name": "Hamoana星空帳篷" ,
+            "number": "06",
+            "glamping": true,
+            "big_img": "central/B_big_img.jpg",
+            "img" : [
+                "central/B_img_1.jpg",
+                "central/B_img_2.jpg",
+                "central/B_img_3.jpg",
+                "central/B_img_4.jpg",
+                "central/B_img_5.jpg"
+            ],
+            "place": "嘉義縣阿里山",
+            "google_map": [23.542809, 120.741888],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": true
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": true,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "衛浴",
+                "浴缸",
+                "星空露營",
+                "鄒族晚宴",
+                "部落早餐"
+            ],
+            "links":{
+                "web": null,
+                "facebook": "https://www.facebook.com/HamoanaGlassTent/photos/?ref=page_internal",
+                "ins": "https://www.instagram.com/hamoanaglamping/"
+            },
+            "key_des": "帶著山林間的生活離去",
+            "des": "世界越是紛擾，生活越需要有療癒的事物，在阿里山，我稱之為自然系療癒法的其中之一，是滿天的星星。天氣好的時候，仰頭一望就有星光熠熠的夜空，一閃一亮的星群，看得心情好美麗，煩惱都被拋到腦後了"
+            ,
+            "book_web":{
+                "web": "https://goo.gl/pXMEY4",
+                "phone": "09-71532530"
+            },
+            "price":[
+                {
+                    "desc": "玻璃實驗帳/2-4人",
+                    "price": 1300,
+                    "weekdays_price": 1300,
+                    "holiday_price": 1300
+                }
+            ]
+        },
+        {
+            "place_name": "山裡面的嵐卡" ,
+            "number": "07",
+            "glamping": true,
+            "big_img": "central/C_big_img.jpg",
+            "img" : [
+                "central/C_img_1.jpg",
+                "central/C_img_2.jpg",
+                "central/C_img_3.jpg",
+                "central/C_img_4.jpg",
+                "central/C_img_5.jpg"
+            ],
+            "place": "南投縣信義鄉",
+            "google_map": [23.794414, 120.963443],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": false,
+                "cloud": true,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "部分公共衛浴",
+                "吹風機",
+                "快煮壺",
+                "兒童遊戲遊具",
+                "戲水池",
+                "可用插座"
+            ],
+            "links":{
+                "web": null,
+                "facebook": "https://www.facebook.com/sai0326/?ref=page_internal",
+                "ins": "https://www.instagram.com/shanlimiandelangqa/"
+            },
+            "key_des": "享受自然回歸山林",
+            "des": "讓旅人住進不過度開發的山林原有面貌，起床能看到雲煙繚繞如仙境般的壯麗景致，周遭都是豐富大自然生態，一家大小可以盡情玩耍、充電。分區少帳規劃能擁有舒適大空間，還提供原住民風味佳餚，充分感受露營的純粹與美好。"
+            ,
+            "book_web":{
+                "web": "https://www.facebook.com/sai0326/?ref=page_internal",
+                "phone": "0911-421-099"
+            },
+            "price":[
+                {
+                    "desc": "大神殿/4人",
+                    "price": 3000,
+                    "weekdays_price": 3000,
+                    "holiday_price": 3500
+                },
+                {
+                    "desc": "太陽vali帳/4人",
+                    "price": 4000,
+                    "weekdays_price": 4000,
+                    "holiday_price": 4500
+                },
+                {
+                    "desc": "星星帳/4人",
+                    "price": 3000,
+                    "weekdays_price": 3000,
+                    "holiday_price": 3500
+                },
+                {
+                    "desc": "星星帳/4人",
+                    "price": 3000,
+                    "weekdays_price": 3000,
+                    "holiday_price": 3500
+                },
+                {
+                    "desc": "月亮帳/4人",
+                    "price": 4000,
+                    "weekdays_price": 4000,
+                    "holiday_price": 4500
+                }
+            ]
+        },
+        {
+            "place_name": "橘舍三食" ,
+            "number": "08",
+            "glamping": true,
+            "big_img": "central/D_big_img.jpg",
+            "img" : [
+                "central/D_img_1.jpg",
+                "central/D_img_2.jpg",
+                "central/D_img_3.jpg",
+                "central/D_img_4.jpg",
+                "central/D_img_5.jpg"
+            ],
+            "place": "苗栗縣卓蘭鎮",
+            "google_map": [24.333356, 120.828803],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": true
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": true,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "衛浴",
+                "吹風機",
+                "快煮壺",
+                "冷暖空調",
+                "腳踏車",
+                "柴燒料理"
+            ],
+            "links":{
+                "web": "https://www.orangefarmhouse3.tw/",
+                "facebook": "https://www.facebook.com/orangefarmhouse3",
+                "ins": "https://www.instagram.com/orangefarmhouse/"
+            },
+            "key_des": "以柑橘園最為廣大",
+            "des": "來自盛產柑橘的苗栗卓蘭，橘舍三食原來只是提供一般露營，在2018年才搭上glamping的風潮，引進7頂豪奢露營帳篷，並利用木頭打造清新自然的野外風格，讓沒有帳篷設備的朋友也能輕鬆享受到露營樂趣。"
+            ,
+            "book_web":{
+                "web": "https://www.happycamper.tw/orangeglamp",
+                "phone": null
+            },
+            "price":[
+                {
+                    "desc": "人數計價/12位包場",
+                    "price": 39600,
+                    "weekdays_price": 39600,
+                    "holiday_price": 43200
+                },
+                {
+                    "desc": "官網定價",
+                    "price": "官網定價",
+                    "weekdays_price": "官網定價",
+                    "holiday_price": "官網定價"
+                }
+            ]
+        },
+        {
+            "place_name": "逗點露營區" ,
+            "number": "05",
+            "glamping": false,
+            "big_img": "central/A_big_img.jpg",
+            "img" : [
+                "central/A_img_1.jpg",
+                "central/A_img_2.jpg",
+                "central/A_img_3.jpg",
+                "central/A_img_4.jpg",
+                "central/A_img_5.jpg"
+            ],
+            "place": "苗栗縣三灣鄉",
+            "google_map": [24.66822977918502, 120.95893894026004],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "乾濕分離衛浴",
+                "飲水機",
+                "流理台",
+                "冰箱",
+                "桌椅"
+            ],
+            "links":{
+                "web": "https://www.hipoutdoor.com/Comma/campsite.aspx",
+                "facebook": "https://www.facebook.com/comma520camp/",
+                "ins": null
+            },
+            "key_des": "充滿峇里島南洋風情",
+            "des": "有一處媲美峇里島南洋風情的Villa景致，這裡坐擁絕佳的自然環境與景觀視野，逗點露營區採飯店式的經營，不僅提供帳篷與羽絨被等出租服務，還有泳池、遊戲設施和五星級衛浴，相當適合全家大小來此露營遊玩。"
+            ,
+            "book_web":{
+                "web": "https://www.hipoutdoor.com/Comma/index.aspx",
+                "phone": "09-05326118"
+            },
+            "price":[
+                {
+                    "desc": "十帳包區制",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                },
+                {
+                    "desc": "雨棚營位",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                },
+                {
+                    "desc": "棧板營位",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                },
+                {
+                    "desc": "草地營位",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                },
+                {
+                    "desc": "大雨棚營位",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                }
+            ]
+        },
+        {
+            "place_name": "半月彎露營區" ,
+            "number": "06",
+            "glamping": false,
+            "big_img": "central/B_big_img.jpg",
+            "img" : [
+                "central/B_img_1.jpg",
+                "central/B_img_2.jpg",
+                "central/B_img_3.jpg",
+                "central/B_img_4.jpg",
+                "central/B_img_5.jpg"
+            ],
+            "place": "苗栗縣三義鄉",
+            "google_map": [24.388906702678344, 120.8098463000083],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": true,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "點心",
+                "炊事",
+                "衛浴"
+            ],
+            "links":{
+                "web": "http://www.halfmoonbent.com.tw/index.php",
+                "facebook": "https://www.facebook.com/pages/%E5%8D%8A%E6%9C%88%E5%BD%8E/720413091324335",
+                "ins": null
+            },
+            "key_des": "哈比屋充滿藝術美感的優雅營地去",
+            "des": "半月彎座落在海拔680公尺的山巒間，距離三義市區約15分鐘車程，佔地0.8公頃，園區內有觀星平台、步道小徑，前方就可俯看雲海大景，夜晚還能欣賞銀河星空。此外，這裡還有宛如哈比人住的小屋，相當吸睛。"
+            ,
+            "book_web":{
+                "web": "https://goo.gl/pXMEY4",
+                "phone": "09-37717236"
+            },
+            "price":[
+                {
+                    "desc": "露營位",
+                    "price": 1200,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1200
+                },
+                {
+                    "desc": "觀景平台營位",
+                    "price": 1200,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1200
+                }
+            ]
+        },
+        {
+            "place_name": "摩天嶺楊園露營區" ,
+            "number": "07",
+            "glamping": false,
+            "big_img": "central/C_big_img.jpg",
+            "img" : [
+                "central/C_img_1.jpg",
+                "central/C_img_2.jpg",
+                "central/C_img_3.jpg",
+                "central/C_img_4.jpg",
+                "central/C_img_5.jpg"
+            ],
+            "place": "台中市和平區",
+            "google_map": [24.3705897587787, 120.95269097739853],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": true,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "集中浴廁",
+                "玩沙池",
+                "吹風機",
+                "冷藏"
+            ],
+            "links":{
+                "web": "https://www.easycamp.com.tw/Store_2374.html",
+                "facebook": "https://www.facebook.com/%E6%91%A9%E5%A4%A9%E5%B6%BA%E6%A5%8A%E5%9C%92%E9%9C%B2%E7%87%9F%E5%8D%80-506171523075825/",
+                "ins": null
+            },
+            "key_des": "無敵視野 獨享絕美山景",
+            "des": "摩天嶺楊園露營區就在摩天嶺，是個半山腰平台，除了山區有的雲海、夜景外，這裡的季節花卉也相當繽紛，像是近期的櫻花，也能在路邊就發現盛開的蹤跡。園區提供一大草皮活動區，當白天露營帳篷撤離後，非常適合全家同樂玩耍，要低一場足球也不成問題呢。"
+            ,
+            "book_web":{
+                "web": "https://www.facebook.com/%E6%91%A9%E5%A4%A9%E5%B6%BA%E6%A5%8A%E5%9C%92%E9%9C%B2%E7%87%9F%E5%8D%80-506171523075825/",
+                "phone": "09-10527921"
+            },
+            "price":[
+                {
+                    "desc": "草地區",
+                    "price": 1000,
+                    "weekdays_price": 800,
+                    "holiday_price": 1000
+                }
+            ]
+        },
+        {
+            "place_name": "ㄡ熊熊露營園地" ,
+            "number": "08",
+            "glamping": false,
+            "big_img": "central/D_big_img.jpeg",
+            "img" : [
+                "central/D_img_1.png",
+                "central/D_img_2.png",
+                "central/D_img_3.jpg",
+                "central/D_img_4.jpg",
+                "central/D_img_5.jpg"
+            ],
+            "place": "台中市和平區",
+            "google_map": [24.173852161554922, 120.97587531782622],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": true,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "衛浴",
+                "親子遊樂場",
+                "水電",
+                "炊事帳"
+            ],
+            "links":{
+                "web": "https://m.icamping.app/store/oss253?fbclid=IwAR3kgyiswM2AZzbMDFJFvtyBvl9OgvOkW2OolwVl9OdyheiF9GSkqfs9Nbs",
+                "facebook": "https://www.facebook.com/%E3%84%A1%E7%86%8A%E7%86%8A%E9%9C%B2%E7%87%9F%E5%9C%92%E5%9C%B0-261357164439243/",
+                "ins": null
+            },
+            "key_des": "堅持露營的本質初衷",
+            "des": "遠離城市的喧囂， 環境優美，景色宜人適合放鬆，親近大自然享受最簡單的時段！"
+            ,
+            "book_web":{
+                "web": "https://www.happycamper.tw/orangeglamp",
+                "phone": "09-25577020"
+            },
+            "price":[
+                {
+                    "desc": "Ａ區 /帳",
+                    "price": 900,
+                    "weekdays_price": 900,
+                    "holiday_price": 900
+                },
+                {
+                    "desc": "B區 /帳",
+                    "price": 900,
+                    "weekdays_price": 900,
+                    "holiday_price": 900
+                },
+                {
+                    "desc": "C-1區 /帳",
+                    "price": 900,
+                    "weekdays_price": 900,
+                    "holiday_price": 900
+                },
+                {
+                    "desc": "C-2區 /帳",
+                    "price": 900,
+                    "weekdays_price": 900,
+                    "holiday_price": 900
+                }
+            ]
+        }
+    ],
+    "east":[
+        {
+            "place_name": "花蓮鹽寮民宿。懶人宿營" ,
+            "number": "09",
+            "glamping": true,
+            "big_img": "east/A_big_img.jpg",
+            "img" : [
+                "east/A_img_1.jpg",
+                "east/A_img_2.jpg",
+                "east/A_img_3.jpg",
+                "east/A_img_4.jpg",
+                "east/A_img_5.jpg"
+            ],
+            "place": "花蓮縣壽豐鄉",
+            "google_map": [23.911071, 121.603308],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "衛浴",
+                "烤肉區",
+                "海景步道",
+                "盥洗用具",
+                "無線網路",
+                "備早餐"
+            ],
+            "links":{
+                "web": "http://www.yanliao.970bnb.net/room5.htm",
+                "facebook": "https://www.facebook.com/YANLIAO57/?ref=page_internal",
+                "ins": "https://www.instagram.com/yanliao57/?hl=zh-tw"
+            },
+            "key_des": "一覽太平洋海岸線之美",
+            "des": "在台11線路邊的「懶人宿營」，是擁有4.9高分評價（滿分5）的露營勝地！不論是小木屋或奢華非洲獵帳，都能眺望無底海景，有寬廣的草皮、步道可以讓小孩放電、遛狗，另有烤肉區、提供現做美味早餐，超適合一家大小、三五好友出遊放空，快揪團出發吧。"
+            ,
+            "book_web":{
+                "web": "http://www.yanliao.970bnb.net/note.htm",
+                "phone": "0905-977057"
+            },
+            "price":[
+                {
+                    "desc": "山角雙人帳",
+                    "price": 3800,
+                    "weekdays_price": 3900,
+                    "holiday_price": 2500
+                },
+                {
+                    "desc": "非洲四人帳",
+                    "price": 4600,
+                    "weekdays_price": 3400,
+                    "holiday_price": 3800
+                }
+            ]
+        },
+        {
+            "place_name": "海崖谷 Hayaku" ,
+            "number": "10",
+            "glamping": true,
+            "big_img": "east/B_big_img.jpg",
+            "img" : [
+                "east/B_img_1.jpg",
+                "east/B_img_2.jpg",
+                "east/B_img_3.jpg",
+                "east/B_img_4.jpg",
+                "east/B_img_5.jpg"
+            ],
+            "place": "花蓮縣壽豐鄉",
+            "google_map": [23.909784, 121.602147],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "獨立衛浴設備",
+                "盥洗備品",
+                "靜音吹風機",
+                "冷暖氣",
+                "冰箱、快煮壺",
+                "獨立WIFi",
+                "備早餐"
+            ],
+            "links":{
+                "web": "https://hayaku.com.tw/index.php",
+                "facebook": null,
+                "ins": "https://www.instagram.com/_hayaku/?igshid=9jhvniuga7ll"
+            },
+            "key_des": "花蓮孩子建造的秘密基地",
+            "des": "2019年底才開幕的「海崖谷 Hayaku」 ，可說是最愜意的豪華露營園區！6種風格帳篷全面向一望無際大海，白天可以在草地上滑草、戲水、玩沙、放空，到了夜晚會點燈，立刻充滿濃厚浪漫氛圍，最後是聽著海聲入眠、睜開眼就是蔚藍大海，是不是很幸福？"
+            ,
+            "book_web":{
+                "web": "https://hayaku.com.tw/index.php/Orders",
+                "phone": "03-8671314"
+            },
+            "price":[
+                {
+                    "desc": "狩獵風、北歐風/四人",
+                    "price": 19800,
+                    "weekdays_price": 5800,
+                    "holiday_price": 7800
+                },
+                {
+                    "desc": "狩獵風、北歐風/雙人",
+                    "price": 18800,
+                    "weekdays_price": 4800,
+                    "holiday_price": 6800
+                },
+                {
+                    "desc": "南洋風、森林風/四人",
+                    "price": 18800,
+                    "weekdays_price": 4800,
+                    "holiday_price": 6800
+                },
+                {
+                    "desc": "唐風、禪風/四人",
+                    "price": 18800,
+                    "weekdays_price": 4800,
+                    "holiday_price": 6800
+                },
+                {
+                    "desc": "南洋風、森林風/雙人",
+                    "price": 17800,
+                    "weekdays_price": 3800,
+                    "holiday_price": 5800
+                },
+                {
+                    "desc": "唐風、禪風/雙人",
+                    "price": 17800,
+                    "weekdays_price": 3800,
+                    "holiday_price": 5800
+                }
+            ]
+        },
+        {
+            "place_name": "踏浪星辰露營Camp" ,
+            "number": "11",
+            "glamping": true,
+            "big_img": "east/C_big_img.jpg",
+            "img" : [
+                "east/C_img_1.jpg",
+                "east/C_img_2.jpg",
+                "east/C_img_3.jpg",
+                "east/C_img_4.jpg",
+                "east/C_img_5.jpg"
+            ],
+            "place": "花蓮縣新城鄉",
+            "google_map": [24.025991, 121.631899],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "衛浴",
+                "盥洗備品",
+                "小吹風機",
+                "移動式冷氣",
+                "衣架",
+                "備早餐"
+            ],
+            "links":{
+                "web": "https://camp.coast-east.com/",
+                "facebook": "https://www.facebook.com/bestcamp2019/",
+                "ins": null
+            },
+            "key_des": "遠眺美麗的七星海灘",
+            "des": "感受大自然美好的「踏浪星辰露營Camp」，也是內外皆美的好選擇！帳篷外型走奇幻風格，好像住著小精靈似的；一走進帳篷內會發現超舒服的床墊、沙發等傢俱擺飾，根本是「小型套房」來著。外頭還有七星潭，可以進行日出、觀星、烤肉、野餐或夜遊等豐富活動，去過都狂推！"
+            ,
+            "book_web":{
+                "web": "https://www.moretravel.com.tw/room-order/index.php?client_code=campCE&fbclid=IwAR1jjRBSa00aVi_vwcKizdSIv1i8XW89ShhooUTCJGqg4xWhMznVIGjDNhM",
+                "phone": null
+            },
+            "price":[
+                {
+                    "desc": "亞馬遜雙人房",
+                    "price": 2500,
+                    "weekdays_price": 2500,
+                    "holiday_price": 2800
+                },
+                {
+                    "desc": "波拉島四人房",
+                    "price": 3500,
+                    "weekdays_price": 3800,
+                    "holiday_price": 3800
+                },
+                {
+                    "desc": "烏干達四人房",
+                    "price": 3500,
+                    "weekdays_price": 3500,
+                    "holiday_price": 3800
+                },
+                {
+                    "desc": "天空之城",
+                    "price": 3200,
+                    "weekdays_price": 3200,
+                    "holiday_price": 3500
+                },
+                {
+                    "desc": "優勝美地",
+                    "price": 3200,
+                    "weekdays_price": 3200,
+                    "holiday_price": 3500
+                }
+            ]
+        },
+        {
+            "place_name": "波希米亞露營區" ,
+            "number": "12",
+            "glamping": true,
+            "big_img": "east/D_big_img.jpg",
+            "img" : [
+                "east/D_img_1.jpg",
+                "east/D_img_2.jpg",
+                "east/D_img_3.jpg",
+                "east/D_img_4.jpg",
+                "east/D_img_5.jpg"
+            ],
+            "place": "台東縣卑南鄉",
+            "google_map": [22.806746382958682, 121.07178717911538],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": true
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "部分獨立衛浴",
+                "空調",
+                "床組",
+                "明亮窗戶",
+                "皆露營車"
+            ],
+            "links":{
+                "web": null,
+                "facebook": "https://www.facebook.com/sunshingcamping/?ref=page_internal",
+                "ins": null
+            },
+            "key_des": "tiny house手工打造的露營車",
+            "des": "看起來像是棟小房子，卻是台車子，帶著波希米亞般的流浪態度，停泊在台東鄉村裡，在大自然裡生活著！波希米亞露營區，是在歐洲重機旅行的時候，入住北歐國家如挪威、芬蘭等當地各式各樣露營區的美好感受，希望能把當時感受到的美好，分享給台灣的朋友們"
+            ,
+            "book_web":{
+                "web": "https://www.facebook.com/sunshingcamping/?ref=page_internal",
+                "phone": "09-83700400"
+            },
+            "price":[
+                {
+                    "desc": "火金姑（無衛浴） /雙人",
+                    "price": 750,
+                    "weekdays_price": 750,
+                    "holiday_price": 750
+                },
+                {
+                    "desc": "潑猴二號 /雙人",
+                    "price": 1800,
+                    "weekdays_price": 1800,
+                    "holiday_price": 1800
+                },
+                {
+                    "desc": "烏干達四人房",
+                    "price": 3500,
+                    "weekdays_price": 1800,
+                    "holiday_price": 3800
+                },
+                {
+                    "desc": "潑猴一號 /四人",
+                    "price": 2400,
+                    "weekdays_price": 2400,
+                    "holiday_price": 2400
+                }
+            ]
+        },
+        {
+            "place_name": "Ocean Chill 海憩露營區" ,
+            "number": "9",
+            "glamping": false,
+            "big_img": "east/A_big_img.jpg",
+            "img" : [
+                "east/A_img_1.jpg",
+                "east/A_img_2.jpg",
+                "east/A_img_3.jpg",
+                "east/A_img_4.jpg",
+                "east/A_img_5.jpg"
+            ],
+            "place": "花蓮縣新城鄉",
+            "google_map": [24.110240949687515, 121.62838959050003],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "24hr供應熱水",
+                "電源",
+                "浴廁",
+                "沐浴髮品"
+            ],
+            "links":{
+                "web": "https://www.easycamp.com.tw/Store_2309.html?fbclid=IwAR0-n3e1wp9HgZrThC0mOhCPArrVL2kZMiVnqRAk4vc0zAkj11c_fT3Jhv0",
+                "facebook": "https://www.facebook.com/OceanChill/",
+                "ins": null
+            },
+            "key_des": "依山傍海的海憩露營區",
+            "des": "讓你置身田野間也能擁有山海景色，便利的交通不用跋山涉水也可輕鬆的親近大自然，享受放鬆的時刻。提供花蓮在地特色旅遊 溯溪、獨木舟、賞鯨、潛水、衝浪等探險活動。"
+            ,
+            "book_web":{
+                "web": "https://www.easycamp.com.tw/Store_2309.html?fbclid=IwAR0-n3e1wp9HgZrThC0mOhCPArrVL2kZMiVnqRAk4vc0zAkj11c_fT3Jhv0",
+                "phone": "09-37164571"
+            },
+            "price":[
+                {
+                    "desc": "草地區",
+                    "price": 900,
+                    "weekdays_price": 700,
+                    "holiday_price": 900
+                },
+                {
+                    "desc": "小棧板",
+                    "price": 1000,
+                    "weekdays_price": 800,
+                    "holiday_price": 1000
+                },
+                {
+                    "desc": "大棧板",
+                    "price": 1200,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1200
+                }
+            ]
+        },
+        {
+            "place_name": "石梯坪露營區" ,
+            "number": "10",
+            "glamping": false,
+            "big_img": "east/B_big_img.jpg",
+            "img" : [
+                "east/B_img_1.jpg",
+                "east/B_img_2.jpg",
+                "east/B_img_3.jpg",
+                "east/B_img_4.jpg",
+                "east/B_img_5.jpg"
+            ],
+            "place": "花蓮縣豐濱鄉",
+            "google_map": [23.483931496782702, 121.51183724021188],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "專屬野炊桌椅",
+                "水電",
+                "海邊的晚餐"
+            ],
+            "links":{
+                "web": "http://camping33.pgo.tw/",
+                "facebook": null,
+                "ins": null
+            },
+            "key_des": "看著星空在山海間入睡",
+            "des": "旅行是放慢人生的方法。來到花蓮石梯坪營區，簡單的露營設備就能享受浩瀚星空與壯闊海景，晚上煮鍋泡麵與朋友享用、吹風閒聊，露營就是這麼閒適。"
+            ,
+            "book_web":{
+                "web": "http://camping33.pgo.tw/",
+                "phone": "09-22211336"
+            },
+            "price":[
+                {
+                    "desc": "有頂營位費",
+                    "price": 1200,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1200
+                }
+            ]
+        },
+        {
+            "place_name": "真柄禾多露營區" ,
+            "number": "11",
+            "glamping": false,
+            "big_img": "east/C_big_img.jpg",
+            "img" : [
+                "east/C_img_1.jpg",
+                "east/C_img_2.jpg",
+                "east/C_img_3.jpg",
+                "east/C_img_4.jpg",
+                "east/C_img_5.jpg"
+            ],
+            "place": "台東縣長濱鄉",
+            "google_map": [23.348133493265095, 121.45822842195044],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "衛浴",
+                "110V電源插座"
+            ],
+            "links":{
+                "web": "https://m.herdorlife.com/camping?fbclid=IwAR1QLhqp_36JrYsEJWIcylMILi4GXGygwdaAHOrMOnGRuBcegoHgCMC6wII",
+                "facebook": "https://www.facebook.com/herdor.camping/",
+                "ins": null
+            },
+            "key_des": "提供旅人大自然這塊帷幕，",
+            "des": "真柄禾多露營區及禾多小酒館倚金剛山傍太平洋，四周環繞著非綠即金的稻田， 在這樣充滿大自然色彩的這塊帷幕下，以帳篷撐起每位內心對自然的純粹意念，看著孩子們在草地上奔跑或是踩進低淺清澈的水圳，甚至夜訪螢火蟲，煮上一壺咖啡，感受移(禾多)動所帶來的旅程感動。"
+            ,
+            "book_web":{
+                "web": null,
+                "phone": "09-05075000"
+            },
+            "price":[
+                {
+                    "desc": "營位",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                }
+            ]
+        },
+        {
+            "place_name": "不想回家-景觀露營區" ,
+            "number": "12",
+            "glamping": false,
+            "big_img": "east/D_big_img.jpg",
+            "img" : [
+                "east/D_img_1.jpg",
+                "east/D_img_2.jpg",
+                "east/D_img_3.jpg",
+                "east/D_img_4.jpg",
+                "east/D_img_5.jpg"
+            ],
+            "place": "台東縣成功鎮",
+            "google_map": [23.10650850968253, 121.36784271179954],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "公共衛浴",
+                "冷藏",
+                "公共座椅",
+                "兒童戲水池",
+                "沙坑"
+            ],
+            "links":{
+                "web": "https://www.hipoutdoor.com/Linger/Camping.aspx?id=4",
+                "facebook": "https://www.facebook.com/musician703/",
+                "ins": null
+            },
+            "key_des": "總會讓您【不。想。回。家】",
+            "des": "位於台東縣成功鎮不想回家景觀露營區，遊客一旦來到這裡，體驗世外桃源的蟲鳴鳥叫，在依山傍水的露營地遠離塵囂，晚上還有一望無際的寧靜星空陪自己入睡，真的會和名字一樣「不想回家」！"
+            ,
+            "book_web":{
+                "web": "https://17camping.ezhotel.com.tw/31",
+                "phone": "09-65507555"
+            },
+            "price":[
+                {
+                    "desc": "草皮營位",
+                    "price": 1200,
+                    "weekdays_price": 1200,
+                    "holiday_price": 1200
+                }
+            ]
+        }
+    ],
+    "south":[
+        {
+            "place_name": "蝶舞澗" ,
+            "number": "13",
+            "glamping": true,
+            "big_img": "south/A_big_img.jpg",
+            "img" : [
+                "south/A_img_1.jpg",
+                "south/A_img_2.jpg",
+                "south/A_img_3.jpg",
+                "south/A_img_4.jpg",
+                "south/A_img_5.jpg"
+            ],
+            "place": "高雄市美濃區",
+            "google_map": [22.938528010517814, 120.58573993506242],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": true
+            },
+            "equipment": [
+                "Wi-Fi 網路",
+                "兒童遊樂區",
+                "共用浴室",
+                "中西式料理早餐"
+            ],
+            "links":{
+                "web": null,
+                "facebook": "https://www.facebook.com/%E8%9D%B6%E8%88%9E%E6%BE%97-1102554029755081/",
+                "ins": null
+            },
+            "key_des": "美濃客家庄世外桃花源",
+            "des": "農場內保留基地原始生態環境，種植並養護黃蝶食草 - 花旗木與鐵刀木樹葉並與《 蟬說：瀰蝶源記 》 結合，透過園區、餐飲、住宿服務項目結合，共同傳達旅遊生活型態。"
+            ,
+            "book_web":{
+                "web": "https://app-apac.thebookingbutton.com/properties/thetaleofbutterflydirect?check_in_date=21-11-2020&check_out_date=22-11-2020&number_adults=2",
+                "phone": "0900-764-378"
+            },
+            "price":[
+                {
+                    "desc": "黃蝶區/ 雙人",
+                    "price": 4500,
+                    "weekdays_price": 4500,
+                    "holiday_price": 4500
+                },
+                {
+                    "desc": "大樹區/ 四人",
+                    "price": 8800,
+                    "weekdays_price": 8800,
+                    "holiday_price": 8800
+                },
+                {
+                    "desc": "櫻花區/ 雙人",
+                    "price": 4200,
+                    "weekdays_price": 4200,
+                    "holiday_price": 4200
+                }
+            ]
+        },
+        {
+            "place_name": "O'GLAMPING貓鼻頭露營莊園" ,
+            "number": "14",
+            "glamping": true,
+            "big_img": "south/B_big_img.jpg",
+            "img" : [
+                "south/B_img_1.jpg",
+                "south/B_img_2.jpg",
+                "south/B_img_3.jpg",
+                "south/B_img_4.jpg",
+                "south/B_img_5.jpg"
+            ],
+            "place": "屏東縣恆春鎮",
+            "google_map": [21.926774836146855, 120.74349495167358],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": true,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "酒吧、用餐區",
+                "公共衛浴",
+                "早晚餐",
+                "寢具",
+                "盥洗用品"
+            ],
+            "links":{
+                "web": null,
+                "facebook": "https://www.facebook.com/OGLAMPING/?ref=page_internal",
+                "ins": "https://www.instagram.com/oglamping/"
+            },
+            "key_des": "高級的Villa型營位",
+            "des": "能眺望台灣海峽與巴士海峽的美麗海景，園區內有著壯闊奇美的珊瑚礁岩、原生種植物，更是隱藏版的觀星地點，白天暢玩水上活動，晚上回到營區慵懶欣賞滿天星斗入眠，讓你聽著海浪聲來場超舒壓的露營體驗。"
+            ,
+            "book_web":{
+                "web": null,
+                "phone": "08-886-6669"
+            },
+            "price":[
+                {
+                    "desc": "Villa/ 4人型",
+                    "price": 5600,
+                    "weekdays_price": 2800,
+                    "holiday_price": 3600
+                },
+                {
+                    "desc": "Villa/ 2人型",
+                    "price": 4200,
+                    "weekdays_price": 2000,
+                    "holiday_price": 2600
+                },
+                {
+                    "desc": "4人營位型",
+                    "price": 4200,
+                    "weekdays_price": 2000,
+                    "holiday_price": 2600
+                },
+                {
+                    "desc": "家庭型營位",
+                    "price": 4800,
+                    "weekdays_price": 2400,
+                    "holiday_price": 3200
+                }
+            ]
+        },
+        {
+            "place_name": "Vanaheim 愛莊園" ,
+            "number": "15",
+            "glamping": true,
+            "big_img": "south/C_big_img.jpg",
+            "img" : [
+                "south/C_img_1.jpg",
+                "south/C_img_2.jpg",
+                "south/C_img_3.jpg",
+                "south/C_img_4.jpg",
+                "south/C_img_5.jpg"
+            ],
+            "place": "台南市北門區",
+            "google_map": [23.306324583009474, 120.11278610462038],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": true
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": false,
+                "cloud": false,
+                "rent": true,
+                "river": true
+            },
+            "equipment": [
+                "床組",
+                "冷氣設備",
+                "衛浴設備",
+                "盥洗用品",
+                "早餐"
+            ],
+            "links":{
+                "web": null,
+                "facebook": "https://www.facebook.com/vanaheim.love.manor/",
+                "ins": null
+            },
+            "key_des": "以愛情為主題的莊園",
+            "des": "雙春濱海遊憩區多了一些浪漫好玩的元素，純白星光露營帳篷、台南忘憂森林、紅樹林綠色隧道、與金色沙灘玩水踏浪，白天可搭乘竹筏遊瀉湖、踩天鵝船、晚上數著星空找螃蟹的家。"
+            ,
+            "book_web":{
+                "web": null,
+                "phone": "06-7865303"
+            },
+            "price":[
+                {
+                    "desc": "星光VIP帳/ 雙人房",
+                    "price": 3500,
+                    "weekdays_price": 3000,
+                    "holiday_price": 3500
+                },
+                {
+                    "desc": "星光豪華帳/ 雙人房",
+                    "price": 2660,
+                    "weekdays_price": 2280,
+                    "holiday_price": 2660
+                },
+                {
+                    "desc": "星光豪華帳/ 四人房",
+                    "price": 3500,
+                    "weekdays_price": 3000,
+                    "holiday_price": 3500
+                }
+            ]
+        },
+        {
+            "place_name": "露營樂1號店" ,
+            "number": "16",
+            "glamping": true,
+            "big_img": "south/D_big_img.jpg",
+            "img" : [
+                "south/D_img_1.jpg",
+                "south/D_img_2.jpg",
+                "south/D_img_3.jpg",
+                "south/D_img_4.jpg",
+                "south/D_img_5.jpg"
+            ],
+            "place": "台南市左鎮區",
+            "google_map": [23.07476112312131, 120.39374979674781],
+            "type" :{
+                "rain_type": true,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "床組",
+                "餐桌椅",
+                "照明",
+                "獨立前庭",
+                "飲水機"
+            ],
+            "links":{
+                "web": "https://www.easycamp.com.tw/Store_2501.html?fbclid=IwAR3xsOY0KBOZ-pk3HvBAmoQ-OZskEHE1TmBZEk_B1cxV-V9Vu4QlMDyZWJs",
+                "facebook": "https://www.facebook.com/easycamp.01/?ref=page_internal",
+                "ins": null
+            },
+            "key_des": "露營樂直營旗艦館",
+            "des": "2019年7月由露營樂經營團隊進場改造與管理，提供豪華南非狩獵帳，美學蓮花帳/神殿帳，帝王雨棚帳及免裝備帳蓬屋，超大草皮營位並規劃有大象水滑梯、30米闖關戲水池、寶貝遊戲區、少年遊樂場、考古沙坑、共融性遊戲區等親子設施。"
+            ,
+            "book_web":{
+                "web": "https://www.easycamp.com.tw/Store_2501.html?fbclid=IwAR3xsOY0KBOZ-pk3HvBAmoQ-OZskEHE1TmBZEk_B1cxV-V9Vu4QlMDyZWJs",
+                "phone": "02-22527966"
+            },
+            "price":[
+                {
+                    "desc": "親子狩獵帳/ 兩大兩小",
+                    "price": 5800,
+                    "weekdays_price": 2800,
+                    "holiday_price": 5800
+                },
+                {
+                    "desc": "草原狩獵帳/ 四人",
+                    "price": 4800,
+                    "weekdays_price": 2800,
+                    "holiday_price": 4800
+                },
+                {
+                    "desc": "非洲狩獵帳/ 四人",
+                    "price": 4800,
+                    "weekdays_price": 2800,
+                    "holiday_price": 4800
+                },
+                {
+                    "desc": "迷彩狩獵帳/ 四人",
+                    "price": 4800,
+                    "weekdays_price": 2800,
+                    "holiday_price": 4800
+                }
+            ]
+        },
+        {
+            "place_name": "輕風椰林親子露營區" ,
+            "number": "13",
+            "glamping": false,
+            "big_img": "south/A_big_img.jpg",
+            "img" : [
+                "south/A_img_1.jpg",
+                "south/A_img_2.jpg",
+                "south/A_img_3.jpg",
+                "south/A_img_4.jpg",
+                "south/A_img_5.jpg"
+            ],
+            "place": "高雄市六龜區",
+            "google_map": [22.890773435361133, 120.60929226264555],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "衛浴設備",
+                "沙坑",
+                "飲水機",
+                "冰箱",
+                "插座"
+            ],
+            "links":{
+                "web": "https://www.coconutcamping.url.tw/",
+                "facebook": "https://www.facebook.com/coconutcamping/",
+                "ins": null
+            },
+            "key_des": "美濃客家庄世外桃花源",
+            "des": "座落於高雄六龜，離美濃不遠，獨具田野風情之輕風椰林親子露營區，以草地為鋪面之綠茵，輔以遍植高聳椰林，紮營於此，浪漫南洋風情盡是美。積木排列而成之電箱殼、白色柵欄圍立之垃圾桶，凡此瑣瑣皆可瞥見營地主人的用心與貼心。雞鵝動物區、白沙鋪設之沙坑區、籃球框、射箭體驗區的設置皆考量並滿足親子同樂的育樂需求。"
+            ,
+            "book_web":{
+                "web": "https://www.facebook.com/coconutcamping/",
+                "phone": null
+            },
+            "price":[
+                {
+                    "desc": "營位",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                }
+            ]
+        },
+        {
+            "place_name": "艾莉親子露營區" ,
+            "number": "14",
+            "glamping": false,
+            "big_img": "south/B_big_img.jpg",
+            "img" : [
+                "south/B_img_1.jpg",
+                "south/B_img_2.jpg",
+                "south/B_img_3.jpg",
+                "south/B_img_4.jpg",
+                "south/B_img_5.jpg"
+            ],
+            "place": "高雄市旗山區",
+            "google_map": [22.878617998216075, 120.49688682495237],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": true
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "衛浴熱水盥洗",
+                "冰箱",
+                "吹風機",
+                "免費山泉水",
+                "冰塊（夏天）"
+            ],
+            "links":{
+                "web": null,
+                "facebook": "https://www.facebook.com/%E8%89%BE%E8%8E%89%E8%A6%AA%E5%AD%90%E9%9C%B2%E7%87%9F%E5%8D%80-1197689453581651/",
+                "ins": null
+            },
+            "key_des": "舉辦許多親子活動的寬敞好去處",
+            "des": "在這有諾大的空間可以讓孩子們盡情奔跑，戲玩。而在平日忙碌的生活，大人們您們是否都忘了光腳丫採在土地上的感覺了吶？露營就是可以好好享受這種簡單的幸福。晴朗的藍天和翠綠的草皮還有孩子們的笑聲，這就是露營親子最佳的註解。"
+            ,
+            "book_web":{
+                "web": "https://tw-camping.tw/hotel_info.asp?hid=16",
+                "phone": "0966453370"
+            },
+            "price":[
+                {
+                    "desc": "草皮區營位",
+                    "price": 800,
+                    "weekdays_price": 800,
+                    "holiday_price": 800
+                },
+                {
+                    "desc": "雨棚區營位",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                }
+            ]
+        },
+        {
+            "place_name": "和華園露營趣" ,
+            "number": "15",
+            "glamping": false,
+            "big_img": "south/C_big_img.jpg",
+            "img" : [
+                "south/C_img_1.jpg",
+                "south/C_img_2.jpg",
+                "south/C_img_3.jpg",
+                "south/C_img_4.jpg",
+                "south/C_img_5.jpg"
+            ],
+            "place": "屏東縣萬巒鄉",
+            "google_map": [22.594697152686937, 120.60706544982122],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": false,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "24小時供應熱水",
+                "吹風機",
+                "盥洗設備",
+                "衛生紙",
+                "插座"
+            ],
+            "links":{
+                "web": null,
+                "facebook": "https://www.facebook.com/%E5%92%8C%E8%8F%AF%E5%9C%92%E9%9C%B2%E7%87%9F%E8%B6%A3-183181055508758/",
+                "ins": null
+            },
+            "key_des": "北大武山腳下和華園",
+            "des": "和華園露營趣，佔地6000千多坪，spa戲水池，乾淨浴廁，臨近五溝水老街，百年萬金天主教堂，交通便利，南台灣休閒的好去處，歡迎愛露營的朋友們蒞臨指導。"
+            ,
+            "book_web":{
+                "web": "https://www.facebook.com/%E5%92%8C%E8%8F%AF%E5%9C%92%E9%9C%B2%E7%87%9F%E8%B6%A3-183181055508758/",
+                "phone": "0966-717-088"
+            },
+            "price":[
+                {
+                    "desc": "台灣赤楠樹區",
+                    "price": 900,
+                    "weekdays_price": 900,
+                    "holiday_price": 900
+                },
+                {
+                    "desc": "花旗木區",
+                    "price": 1100,
+                    "weekdays_price": 1100,
+                    "holiday_price": 1100
+                },
+                {
+                    "desc": "黃蓮木區",
+                    "price": 1100,
+                    "weekdays_price": 1100,
+                    "holiday_price": 1100
+                },
+                {
+                    "desc": "樹葡萄石板區",
+                    "price": 1100,
+                    "weekdays_price": 1100,
+                    "holiday_price": 1100
+                },
+                {
+                    "desc": "落羽松碎石區",
+                    "price": 1100,
+                    "weekdays_price": 1100,
+                    "holiday_price": 1100
+                },
+                {
+                    "desc": "茄苳木區",
+                    "price": 1100,
+                    "weekdays_price": 1100,
+                    "holiday_price": 1100
+                }
+            ]
+        },
+        {
+            "place_name": "嚮露靈象山六龜露營區" ,
+            "number": "16",
+            "glamping": false,
+            "big_img": "south/D_big_img.jpg",
+            "img" : [
+                "south/D_img_1.jpg",
+                "south/D_img_2.jpg",
+                "south/D_img_3.jpg",
+                "south/D_img_4.jpg",
+                "south/D_img_5.jpg"
+            ],
+            "place": "台南市左鎮區",
+            "google_map": [23.000727475796182, 120.65920230920821],
+            "type" :{
+                "rain_type": false,
+                "indoor_type": false
+            },
+            "require":{
+                "night": false,
+                "car": true,
+                "grass": true,
+                "cloud": false,
+                "rent": true,
+                "river": false
+            },
+            "equipment": [
+                "超大戲水池",
+                "白沙戲沙坑",
+                "冰箱、冰櫃",
+                "免費冰塊",
+                "吹風機"
+            ],
+            "links":{
+                "web": "https://hugo14020.pixnet.net/blog/post/202045086",
+                "facebook": "https://www.facebook.com/xianglou2018",
+                "ins": null
+            },
+            "key_des": "擁有逾千坪的超級大草坪可露",
+            "des": "高雄六龜嚮露休閒露營區擁有千坪大草地空間。營主打造多樣遊憩設施，有夏天消暑戲水池、沙坑、原木溜滑梯攀爬組，在營本部處還設有木地板遊戲區，提供樂高積木、串珠、軌道組等多樣玩具。 營地保留大空間活動草皮，讓小朋友盡情跑跳。"
+            ,
+            "book_web":{
+                "web": "https://hugo14020.pixnet.net/blog/post/202045086",
+                "phone": null
+            },
+            "price":[
+                {
+                    "desc": "草地營位",
+                    "price": 1000,
+                    "weekdays_price": 1000,
+                    "holiday_price": 1000
+                },
+                {
+                    "desc": "雨棚營位",
+                    "price": 1200,
+                    "weekdays_price": 1200,
+                    "holiday_price": 1200
+                }
+            ]
+        }
+    ]
+}
