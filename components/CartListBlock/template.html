@@ -1,0 +1,42 @@
+<div class="each_block">
+  <div class="cart_block">
+    <div class="content_part1 ">
+      <div class="product_img">
+        <img :src="require(`../../assets/ProductImage/${product.id}_bigimg.jpeg`)" alt="商品縮圖">
+      </div>
+      <p class="product_name mobile_none">
+        {{ name }}
+      </p>
+    </div>
+    <div class="mobile_right">
+      <div class="content_mobile">
+        <p class="product_name mobile">
+          {{ name }}
+        </p>
+      </div>
+      <div class="content_part2 ">
+        <p class="product_price">
+          NT$ {{ price }}
+        </p>
+      </div>
+      <div class="content_part3 ">
+        <div class="num_section">
+          <button class="minus">
+            <p>-</p>
+          </button>
+          <h3>{{ product.num }}</h3>
+          <button class="plus">
+            <p>+</p>
+          </button>
+        </div>
+      </div>
+      <div class="content_part4 ">
+        <div class="delete_img del_mobile_none">
+          <img src="../../assets/ShoppingCart/delete.png" alt="刪除">
+        </div>
+        <button class="delete_btn del_mobile">刪除</button>
+      </div>
+    </div>
+  </div>
+  <div class="line" v-if="product.id !== list_length"></div>
+</div>
