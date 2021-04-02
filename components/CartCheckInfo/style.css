@@ -1,0 +1,118 @@
+.title{
+    color: #2A7682;
+    margin-bottom: 20px;
+}
+
+.product_list_item{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+.product_list{
+    max-height: 80px;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+
+.product_list.open{
+    max-height: 2000px;
+    transition: max-height 1.5s;
+}
+
+.name{
+    flex: 1;
+    margin: 0 20px;
+    z-index: -1;
+}
+
+.price{
+    font-size: 16px;
+    z-index: -1;
+}
+
+.product_img{
+    width: 120px;
+    min-width: 120px;
+    z-index: -1;
+}
+
+.product_img img{
+    width: 100%;
+}
+
+
+.toogle_list{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.726);
+    z-index: 2;
+}
+
+.toogle_list .line{
+    width: 100%;
+    height: 1px;
+    background-color: #2A7682;
+}
+
+.toogle_list .toogle_img{
+    width: 25px;
+    min-width: 25px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.toogle_list .toogle_img.open{
+    transform: rotate(180deg);
+}
+
+.toogle_list .toogle_img img{
+    width: 100%;
+}
+
+.check_info{
+    margin-top: 40px;
+}
+
+.each_info{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.each_info p{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.each_info p:nth-child(1){
+    text-align: right;
+    min-width: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+
+@media(max-width: 992px){
+    *{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 768px){
+
+}
+
+@media(max-width: 320px){
+    .product_list_item{
+        flex-direction: column;
+    }
+
+    .name{
+        margin: 0px;
+    }
+
+    .product_img{
+        width: 80px;
+        min-width: 80px;
+    }
+}

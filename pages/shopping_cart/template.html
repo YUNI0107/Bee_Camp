@@ -1,0 +1,137 @@
+<div class="cart">
+  <transition name="slide-fade">
+    <div class="step_1" v-if="step == 1">
+      <div class="left_cartList">
+        <h2 class="title">購物車清單</h2>
+        <div class="list_content">
+          <div class="list_info">
+            <div class="content_part1 mobile_none">
+              <p class="contnet_info contnet_info_1">商品</p>
+            </div>
+            <div class="content_part2 mobile_none">
+              <p class="contnet_info">單價</p>
+            </div>
+            <div class="content_part3 mobile_none">
+              <p class="contnet_info">數量</p>
+            </div>
+            <div class="content_part4 mobile_none">
+              <p class="contnet_info">刪除</p>
+            </div>
+          </div>
+        </div>
+        <div class="cart_total_block">
+          <CartListBlock v-for="product in cart_list" :key="product.id" :product="product"
+            :list_length="cart_list.length" />
+        </div>
+      </div>
+      <div class="right_pay_section">
+        <p class="total_product">共2件商品</p>
+        <div class="total_price">
+          <p>小計</p>
+          <h2>NT$70,400</h2>
+        </div>
+        <div class="top_input">
+          <div class="left">
+            <p>選擇付款方式</p>
+            <input type="radio" id="card" v-model="pay" value="card">
+            <label for="card">信用卡付款</label>
+          </div>
+          <div class="right">
+            <p>選擇運送方式</p>
+            <input type="radio" id="trans" v-model="trans_way" value="car">
+            <label for="trans">宅配（ 需負擔運費NT$70 ）</label>
+          </div>
+        </div>
+        <div class="bottom_input">
+          <p>發票資訊</p>
+          <input type="radio" id="phone_invoice" v-model="invoice" value="phone">
+          <label for="phone_invoice">電子發票（手機條碼載具）</label>
+
+          <p v-if="invoice == 'phone'">輸入手機載具條碼</p>
+
+          <input type="text" v-model="invoice_barcode" v-if="invoice == 'phone'" />
+          <br>
+          <input type="radio" id="people_invoice" v-model="invoice" value="people">
+          <label for="people_invoice">電子發票（自然人憑證歸戶）</label>
+          <p v-if="invoice == 'people'">輸入自然人憑證條碼</p>
+          <input type="text" v-model="invoice_barcode" v-if="invoice == 'people'" />
+          <br>
+          <input type="radio" id="tax_invoice" v-model="invoice" value="tax">
+          <label for="tax_invoice">統編發票</label>
+        </div>
+        <div class="user_section">
+          <p>訂購人資訊</p>
+          <label for="name">姓名</label>
+          <input type="text" id="name" v-model="user_name">
+          <br>
+          <label for="phone">手機</label>
+          <input type="text" id="phone" v-model="user_phone">
+          <br>
+          <label for="mail">信箱</label>
+          <input type="text" id="mail" v-model="user_mail">
+          <br>
+          <label for="adress">地址</label>
+          <textarea v-model="user_adress" id="adress"></textarea>
+          <br>
+        </div>
+        <div class="button_section">
+          <button>確認付款</button>
+        </div>
+      </div>
+    </div>
+  </transition>
+  <transition name="slide-fade">
+    <div class="step_2 mobile" v-if="step == 2">
+      <div class="mobile_pay_section">
+        <div class="top_title">
+          <p>選擇付款方式</p>
+        </div>
+        <div class="line"></div>
+        <div class="top_section">
+          <p class="each_title">選擇付款方式</p>
+          <input type="radio" id="card" v-model="pay" value="card">
+          <label for="card">信用卡付款</label>
+          <p class="each_title">選擇運送方式</p>
+          <input type="radio" id="trans" v-model="trans_way" value="car">
+          <label for="trans">宅配（ 需負擔運費NT$70 ）</label>
+          <p class="each_title">發票資訊</p>
+          <input type="radio" id="phone_invoice" v-model="invoice" value="phone">
+          <label for="phone_invoice">電子發票（手機條碼載具）</label>
+          <p v-if="invoice == 'phone'" class="invoice_title">輸入手機載具條碼</p>
+          <input type="text" v-model="invoice_barcode" v-if="invoice == 'phone'" />
+          <br>
+          <input type="radio" id="people_invoice" v-model="invoice" value="people">
+          <label for="people_invoice">電子發票（自然人憑證歸戶）</label>
+          <p v-if="invoice == 'people'" class="invoice_title">輸入自然人憑證條碼</p>
+          <input type="text" v-model="invoice_barcode" v-if="invoice == 'people'" />
+          <br>
+          <input type="radio" id="tax_invoice" v-model="invoice" value="tax">
+          <label for="tax_invoice">統編發票</label>
+        </div>
+        <div class="top_title">
+          <p>訂購人資訊</p>
+        </div>
+        <div class="line"></div>
+        <div class="user_section">
+          <label for="name">姓名</label>
+          <input type="text" id="name" v-model="user_name">
+          <br>
+          <label for="phone">手機</label>
+          <input type="text" id="phone" v-model="user_phone">
+          <br>
+          <label for="mail">信箱</label>
+          <input type="text" id="mail" v-model="user_mail">
+          <br>
+          <label for="adress">地址</label>
+          <input type="text" v-model="user_adress" id="adress">
+          <br>
+        </div>
+      </div>
+    </div>
+  </transition>
+  <transition name="slide-fade">
+        <CartCheckInfo class="step_3 mobile" v-if="step == 3" :cart_list="cart_list" :all_checkinfo="all_checkinfo"/>
+  </transition>
+  <CartMoblieBottom  :step="step" @stepToogle="stepToogle" />
+  <FooterSection class="foot_postion" />
+</div>

@@ -1,0 +1,113 @@
+*{
+    /* 初始化設定 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1{
+    font-weight: 500;
+    text-align: center;
+    padding: 15px;
+}
+h2{
+    padding: 10px 0;
+    font-weight: 500;
+
+}
+section{
+    padding: 20px 0;
+}
+/* banner */
+#Banner{
+    background-color: rgb(221, 221, 221);
+    height: 80vh;
+    background-image: url("../assets/homepage/banner1.svg");
+    background-repeat: no-repeat;
+    background-position: center center ;
+}
+.light{
+    width: 30px;
+    height: auto;
+    position: relative;
+    left: 45%;
+    border: 1px solid olive;
+}
+.leftimg{
+    width: 250px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    left: 10%;
+}
+.centerimg{
+    width: 500px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    top: 40%;
+    left:10% ;
+}
+.rightimg{
+    width: 350px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    left:5% ;
+}
+
+
+/* 關於露營蜂 */
+#About{
+    padding: 20px 0;
+}
+
+p{
+    text-align:center; 
+    font-weight: 400;
+
+}
+.aboutimg{
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    overflow: hidden;
+    display: inline-block;
+    margin:0 20px ;
+}
+
+ul{
+    border: 1px solid red;
+   display: inline-block;
+}
+li{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+li p{
+    text-align: left;
+    line-height: 1.6rem;
+}
+
+.aboutus{
+    display: flex;
+    max-width: 1200px;
+    justify-content:center;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.aboutus div:first-child{
+    flex: 1;
+}
+.aboutus div:nth-child(2){
+    flex: 2;
+}
+
+
+.LearnMore{
+    text-align: right;
+}
+

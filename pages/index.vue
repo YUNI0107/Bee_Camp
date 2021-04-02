@@ -83,8 +83,9 @@
 
 <script>
 
+
 export default {
- 
+    
  components:{ 
     Navbar: () => import("@/components/Navbar"),
     Camp:() => import("@/components/Camp"),

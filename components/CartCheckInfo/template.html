@@ -1,0 +1,51 @@
+<div class="check_section">
+    <p class="title">確認訂單</p>
+    <div class="product_content">
+        <div class="product_list" :class="{ 'open': toogleopen }">
+            <div class="product_list_item" v-for="product in check_list">
+                <div class="product_img">
+                    <img :src="require(`../../assets/ProductImage/${product.id}_bigimg.jpeg`)">
+                </div>
+                <p class="name">{{ product.name }}</p>
+                <div class="price">NT.{{ product.price }}</div>
+            </div>
+        </div>
+        <div class="toogle_list">
+            <div class="line"></div>
+            <div @click="toogleopen = !toogleopen" class="toogle_img" :class="{ 'open': toogleopen }">
+                <img src="../../assets/ShoppingCart/toogle.png">
+            </div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="check_info">
+        <div class="each_info">
+            <p>訂購人</p>
+            <p>{{ all_checkinfo.user_name }}</p>
+        </div>
+        <div class="each_info">
+            <p>手機</p>
+            <p>{{ all_checkinfo.user_phone }}</p>
+        </div>
+        <div class="each_info">
+            <p>信箱</p>
+            <p>{{ all_checkinfo.user_mail }}</p>
+        </div>
+        <div class="each_info next_info">
+            <p>地址</p>
+            <p>{{ all_checkinfo.user_adress }}</p>
+        </div>
+        <div class="each_info">
+            <p>付款方式</p>
+            <p>{{ pay }}</p>
+        </div>
+        <div class="each_info">
+            <p>運送方式</p>
+            <p>{{ trans_way }}</p>
+        </div>
+        <div class="each_info">
+            <p>發票</p>
+            <p>{{ invoice }}<br> {{ all_checkinfo.invoice_barcode }}</p>
+        </div>
+    </div>
+</div>
