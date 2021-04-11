@@ -1,4 +1,5 @@
 <div class="product_section">
+    <RightBar v-if="cate" :cate="cate" :backcolor="'#2A7682'"/>
     <p>{{ id }}</p>
-    <p>{{cate}}</p>
+    <p v-if="product_info">{{cate}}</p>
 </div>

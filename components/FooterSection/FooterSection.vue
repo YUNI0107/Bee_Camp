@@ -1,12 +1,7 @@
-
-
-<template>
-<div>
-    購物車
-</div>
-</template>
 <script>
 export default {
     
 }
 </script>
+<template src="./template.html"></template>
+<style scoped src="./style.css"></style>
