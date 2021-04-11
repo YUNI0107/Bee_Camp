@@ -20,7 +20,10 @@ section{
 }
 /* banner */
 #Banner{
-    background-color: rgb(221, 221, 221);
+   border: 1px solid red;
+}
+.bannerpic{
+   /* background-color: rgb(221, 221, 221); */
     height: 80vh;
     background-image: url("../assets/homepage/banner1.svg");
     background-repeat: no-repeat;
@@ -34,20 +37,22 @@ section{
     border: 1px solid olive;
 }
 .leftimg{
-    width: 250px;
+    width: 20vw;
     height: auto;
     display: inline-block;
     position: relative;
     top: 30%;
-    left: 10%;
+    left: 5%;
 }
 .centerimg{
-    width: 500px;
+    width: 35vw;
+    /*border: 1px solid green;*/
     height: auto;
     display: inline-block;
     position: relative;
-    top: 40%;
-    left:10% ;
+    top: 50%;
+    left:28% ;
+    transform: translateX(-50%);
 }
 .rightimg{
     width: 350px;
@@ -56,6 +61,15 @@ section{
     position: relative;
     top: 30%;
     left:5% ;
+}
+
+.searchbox{
+    /* border: 1px solid green; */
+    margin: 0 auto;
+    width: 70vw;
+    height:190px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -69,17 +83,40 @@ p{
     font-weight: 400;
 
 }
+
+
+
+.aboutus{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    justify-content:center;
+    margin: 20px auto;
+
+}
+.aboutus div:first-child{
+    flex: 1.5;
+    min-width: 350px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
 .aboutimg{
     width: 100%;
     height: 100%;
-    border: 1px solid gray;
+
+    position: absolute;
+    /*border: 1px solid gray;*/
     overflow: hidden;
     display: inline-block;
-    margin:0 20px ;
 }
-
+.aboutus div:nth-child(2){
+   
+    flex: 2;
+    min-width: 350px;
+}
 ul{
-    border: 1px solid red;
+   /* border: 1px solid purple;*/
    display: inline-block;
 }
 li{
@@ -90,24 +127,17 @@ li{
 li p{
     text-align: left;
     line-height: 1.6rem;
-}
-
-.aboutus{
-    display: flex;
-    max-width: 1200px;
-    justify-content:center;
-    margin: 0 auto;
-    border: 1px solid red;
-}
-.aboutus div:first-child{
-    flex: 1;
-}
-.aboutus div:nth-child(2){
-    flex: 2;
+    max-width: 600px;
 }
 
 
 .LearnMore{
+    padding: 10px;
+   /*border: 1px solid red; */
     text-align: right;
+    margin: 20px;
+    text-decoration: none;
+    vertical-align: middle;
 }
+
 
