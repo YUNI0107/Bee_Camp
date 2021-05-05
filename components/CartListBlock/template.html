@@ -21,22 +21,22 @@
       </div>
       <div class="content_part3 ">
         <div class="num_section">
-          <button class="minus">
+          <button class="minus" @click="toggleNum('-')">
             <p>-</p>
           </button>
           <h3>{{ product.num }}</h3>
-          <button class="plus">
+          <button class="plus" @click="toggleNum('+')">
             <p>+</p>
           </button>
         </div>
       </div>
       <div class="content_part4 ">
-        <div class="delete_img del_mobile_none">
+        <div class="delete_img del_mobile_none" @click="deleteProduct" >
           <img src="../../assets/ShoppingCart/delete.png" alt="刪除">
         </div>
-        <button class="delete_btn del_mobile">刪除</button>
+        <button @click="deleteProduct" class="delete_btn del_mobile">刪除</button>
       </div>
     </div>
   </div>
-  <div class="line" v-if="product.id !== list_length"></div>
+  <div class="line" v-if="index !== list_length"></div>
 </div>

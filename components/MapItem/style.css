@@ -1,0 +1,92 @@
+.pop_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pop_like_input {
+    appearance: none;
+    display: none;
+}
+
+.pop_like {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+/* 判斷是否點選 */
+.pop_like_input:checked ~ label .like{
+    display: block;
+}
+.pop_like_input:checked ~ label .unlike{
+    display: none;
+}
+
+.pop_like_input ~ label .like{
+    display: none;
+}
+.pop_like_input ~ label .unlike{
+    display: block;
+}
+
+.pop_like img {
+    height: 100%;
+}
+
+.pop_name{
+    font-size: 18px;
+    margin: 10px 0;
+    color: #136770;
+}
+
+.pop_num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.pop_place {
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+    margin: 0;
+}
+
+.pop_place span {
+    padding: 0 2px;
+}
+
+
+/* 豪華露營 */
+
+
+
+.pop_g .pop_num {
+    background-color: #136770;
+    color: #fff;
+}
+
+/* 普通露營 */
+
+
+.pop_c .pop_num {
+    background-color:#ffe97b;
+    color: #136770;
+}
+
+  
+  .icon{
+      transform: translate(-50%, -50%);
+  }
