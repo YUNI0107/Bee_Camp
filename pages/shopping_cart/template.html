@@ -20,15 +20,18 @@
           </div>
         </div>
         <div class="cart_total_block">
-          <CartListBlock v-for="product in cart_list" :key="product.id" :product="product"
-            :list_length="cart_list.length" />
+          <h2 v-if="cart_list.length == 0">並無選購商品，<span><NuxtLink to="/product_menu">歡迎前往選購</NuxtLink></span></h2>
+          <transition-group name="blockmove">
+            <CartListBlock v-for="(product,index) in cart_list" :key="product.id" :product="product"
+              :list_length="cart_list.length" :index="index+1" class="blockmove-item"/>
+          </transition-group>
         </div>
       </div>
       <div class="right_pay_section">
-        <p class="total_product">共2件商品</p>
+        <p class="total_product">共{{ cart_list_length }}件商品</p>
         <div class="total_price">
           <p>小計</p>
-          <h2>NT$70,400</h2>
+          <h2>NT${{ animatedNumber }}</h2>
         </div>
         <div class="top_input">
           <div class="left">
@@ -130,8 +133,8 @@
     </div>
   </transition>
   <transition name="slide-fade">
-        <CartCheckInfo class="step_3 mobile" v-if="step == 3" :cart_list="cart_list" :all_checkinfo="all_checkinfo"/>
+    <CartCheckInfo class="step_3 mobile" v-if="step == 3" :cart_list="cart_list" :all_checkinfo="all_checkinfo" :cart_list_length="cart_list_length"/>
   </transition>
-  <CartMoblieBottom  :step="step" @stepToogle="stepToogle" />
+  <CartMoblieBottom :step="step" @stepToogle="stepToogle" :price_total="animatedNumber" />
   <FooterSection class="foot_postion" />
 </div>

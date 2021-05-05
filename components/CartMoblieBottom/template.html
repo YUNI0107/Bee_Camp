@@ -2,7 +2,7 @@
   <p class="total_product">共2件商品</p>
   <div class="total_price">
     <p>小計</p>
-    <h2>NT$70,400</h2>
+    <h2>NT${{ price_total }}</h2>
   </div>
   <div class="step_section">
       <button @click="stepToogle('-')" :class="{ 'first': step == 1 }"><span v-if="step !== 1">上一步</span></button>

@@ -1,0 +1,38 @@
+.pic_zoom{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1.2px) brightness(70%);
+    cursor: pointer;
+}
+
+.show_img{
+    width: 100%;
+    max-width: 700px;
+    cursor: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.show_img img{
+    padding: 0 10px;
+    width: 100%;
+}
+
+.show_img .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.show_img .close img{
+    width: 100%;
+    filter: drop-shadow(1px 2px 4px rgba(51, 51, 51, 0.411));
+}

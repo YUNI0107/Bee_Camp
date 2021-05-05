@@ -1,0 +1,13 @@
+<div class="left_section">
+    <div class="top_section">
+        <div class="cate_img">
+            <img v-if="cate !== null" :src="require(`../../assets/ProductLeftNav/${cate}.png`)">
+        </div>
+        <p>{{cate_name}}</p>
+    </div>
+    <div class="back">
+        <div class="back_img" @click="backPage">
+            <img src="../../assets/ProductLeftNav/back.png" alt="回到上一頁">
+        </div>
+    </div>
+</div>

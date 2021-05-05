@@ -1,4 +1,70 @@
 <div class="product_section">
-    <p>{{ id }}</p>
-    <p>{{cate}}</p>
+  <div class="content">
+    <div class="product_pic_section">
+      <div class="big_img" :class="{'fake_img': rendering}" @click="picZoom('+')" title="點我放大">
+        <img v-if="rendering" src="../../assets/ProductPage/fake_img.png">
+        <img class="real_img" :class="{'pic_ani': pic_ani}" v-if="current_pic !== null" :src="current_pic">
+        <div class="pic_nav mobile">
+          <div v-for="(item,index) in (smallpic_num+1)" :class="{'green': index == current_pic_num}"
+            @click.stop="changeBigImg(item-1)"></div>
+        </div>
+      </div>
+      <div class="little_pic_all">
+        <div class="little_pic_img" @click="changeBigImg(0)">
+          <img v-if="product_info" :src="require(`../../assets/ProductImage/${product_info.id}_bigimg.jpeg`)">
+        </div>
+        <div class="little_pic_img" v-for="(item,index) in smallpic_num" @click="changeBigImg(item)">
+          <img v-if="product_info" :src="require(`../../assets/ProductImage/${product_info.id}_small${item}.jpeg`)">
+        </div>
+      </div>
+    </div>
+    <div class="product_info_section">
+      <div class="info_top">
+        <h2 class="name" :class="{'fake': rendering}">
+          <span v-if="product_info">{{ product_info.name }}</span>
+        </h2>
+        <h2 class="price" :class="{'fake': rendering}" v-if="product_info">NT${{ product_info.price }}</h2>
+        <div class="line"></div>
+        <p v-if="product_info">{{ product_info.short_intro }}</p>
+        <div class="cart_section">
+          <div class="num_section">
+            <button class="minus" @click="toggleNum('-')">
+              <h4>-</h4>
+            </button>
+            <h3>{{ num }}</h3>
+            <button class="plus"  @click="toggleNum('+')">
+              <h4>+</h4>
+            </button>
+          </div>
+          <button @click="addCart" class="addcart">加入購物車</button>
+        </div>
+      </div>
+      <div class="bottom_table">
+        <div class="toggle_table">
+          <div class="standard toggle_button" :class="{'click': toggle == 'standard'}" @click="toggleTable('standard')">
+            <p>商品規格</p>
+          </div>
+          <div class="ship toggle_button" :class="{'click': toggle == 'ship'}" @click="toggleTable('ship')">
+            <p>運費與付款說明</p>
+          </div>
+        </div>
+        <div class="table_content">
+          <table v-if="product_info">
+            <tr v-for="(item,index) in show_tablecontent" :key="index">
+              <td>{{ item.name }}</td>
+              <td>{{ item.text }}</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <ProductLeftNav :cate="cate" class="mobile_none" />
+  <div class="background_color">
+    <div class="green"></div>
+    <div class="white"></div>
+  </div>
+  <FooterSection class="foot_postion mobile_none" />
+  <PicZoom :current_pic="current_pic" @picZoom="picZoom" v-if="piczoom" />
 </div>

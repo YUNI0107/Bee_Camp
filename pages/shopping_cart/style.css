@@ -17,7 +17,7 @@
   flex: 2;
   width: 100%;
   padding: 0 70px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 200px;
 }
 
@@ -66,6 +66,19 @@
 .left_cartList .cart_total_block {
   width: 100%;
   padding: 10px 10px;
+}
+
+.cart_total_block h2{
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #333;
+  margin-top: 20px;
+}
+
+.cart_total_block a{
+  text-decoration: none;
+  color: #2A7682;
 }
 
 /* 付款固定區 */
@@ -259,6 +272,8 @@
   margin-top: 70px;
   padding-bottom: 180px;
   font-size: 14px;
+  display: block;
+  width: 100%;
 }
 
 
@@ -273,14 +288,18 @@
   position: absolute;
   width: 100%;
   left: 0;
+  width: 100%;
   padding: 3px 10px;
   background-color: #2A7682;
 }
 
 .mobile_pay_section .top_section {
-  margin-top: 30px;
+  padding-top: 20px;
   margin-bottom: 40px;
+  width: 100%;
+  display: inline-block;
 }
+
 
 .mobile_pay_section input[type="text"] {
   width: 100%;
@@ -352,6 +371,25 @@
   padding: 0 70px;
   margin-top: 70px;
   padding-bottom: 180px;
+}
+
+
+/* 商品移除動畫 */
+.blockmove-item {
+  transition: all 1s;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.blockmove-leave-active {
+  position: absolute;
+}
+
+.blockmove-enter, .blockmove-leave-to{
+  transition: all .5s;
+  transform: translateX(20px);
+  opacity: 0;
 }
 
 
