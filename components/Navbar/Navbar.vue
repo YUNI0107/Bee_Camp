@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container">
-            <nuxt-link to="/"> <div class="logo"><img src="../assets/logo.svg" alt=""></div></nuxt-link>
+            <nuxt-link to="/"> <div class="logo"><img src="../../assets/logo.svg" alt=""></div></nuxt-link>
         <div class="navbar">
              <div>關於露營蜂</div>
              <nuxt-link to="/camp_category/">
@@ -19,6 +19,7 @@
     </div>
 </template>
 <style scoped>
+/* lr */
 .container{
     display: flex;
     justify-content: space-between;
@@ -32,6 +33,11 @@
  width: 50%;
  justify-content: space-around;
 }
+a{
+     text-decoration:none;
+    color: black;
+}
 
+/* lr */
     
 </style>
