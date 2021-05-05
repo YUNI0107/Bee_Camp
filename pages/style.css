@@ -48,7 +48,7 @@ section{
 .bannerpic{
    /* background-color: rgb(221, 221, 221); */
     height: 80vh;
-    background-image: url("../assets/homepage/banner1.svg");
+    background-image: url("assets/homepage/banner1.svg");
     background-repeat: no-repeat;
     background-position: center center ;
 }
@@ -110,7 +110,7 @@ section{
 
 .searchbox::before{
     content: "";
-    background-image: url("../assets/homepage/grass1.svg");
+    background-image: url("assets/homepage/grass1.svg");
     background-repeat: no-repeat;
     position: absolute;
     right: 0;
@@ -189,8 +189,6 @@ p{
     font-weight: 400;
 
 }
-
-
 
 .aboutus{
     /*border: 1px solid green;*/
@@ -277,4 +275,106 @@ li p{
 a{
     text-decoration:none;
     color: black;
+}
+
+
+
+/* 商品種類頁籤 */
+
+#PD_category{
+    display: flex;
+    width: 700px;
+    margin: 10px auto;
+}
+.cate_item{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cate_item .cate_img{
+    text-align: center;
+    min-width: 65px;
+    min-height: 65px;
+    border-radius: 50%;
+    margin: 0 auto;    
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(241, 241, 241);
+}
+
+.cate_item p{
+    margin-top: 5px;
+}
+
+.cate_item .cate_img:hover{
+    background-color: #FFE97B;
+}
+
+/* 商品分類 */
+.cate_item .item_camp{
+    background-image: url("../assets/homepage/camp-gray.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cate_item .item_camp:hover{
+    background-image: url("../assets/homepage/camp-green.svg");
+}
+.cate_item .item_kitchen{
+    background-image: url("../assets/homepage/kitchen-gray.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cate_item .item_kitchen:hover{
+    background-image: url("../assets/homepage/kitchen-green.svg");}
+
+.cate_item .item_dishes{
+    background-image: url("../assets/homepage/dishes-gray.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cate_item .item_dishes:hover{
+    background-image: url("../assets/homepage/dishes-green.svg");}
+
+
+.cate_item .item_light{
+    background-image: url("../assets/homepage/light-gray.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cate_item .item_light:hover{
+    background-image: url("../assets/homepage/light-green.svg");}
+
+.cate_item .item_inside{
+    background-image: url("../assets/homepage/inside-gray.svg");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cate_item .item_inside:hover{
+    background-image: url("../assets/homepage/inside-green.svg");}
+
+.cate_item .item_other{
+    background-image: url("../assets/homepage/other-gray.svg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cate_item .item_other:hover{
+    background-image: url("../assets/homepage/other-green.svg");}
+
+
+.recommend_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.recommend_list .recommend_item{
+    margin: 0 20px;
 }

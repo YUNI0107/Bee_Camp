@@ -5,9 +5,7 @@ export default {
         next_step(){
             switch(this.step){
                 case 1 : 
-                    if(this.cart_list_length !== 0){
-                        return "前往付款"
-                    }
+                    return "前往付款"
                     break;
                 case 2 : 
                     return "下一步"

@@ -1,7 +1,7 @@
 <script>
 import axios from 'axios'
 import FooterSection from "../../components/FooterSection/FooterSection"
-import MapModal from "../../components/MapModal/MapModal"
+import ProductListBlock from "../../components/ProductListBlock/ProductListBlock"
 export default {
   data() {
     return {
@@ -35,12 +35,23 @@ export default {
       ],
       link_list: [],
       link_info: [],
+      all_product_list: [],
     };
   },
-  computed: {},
+  computed: {
+    showList(){
+        return this.all_product_list.map(item =>{
+          return {
+            id: item.id,
+                   name: item.name,
+                   price: item.price,
+          }
+        })
+    }
+  },
   components:{
     FooterSection,
-    MapModal,
+    ProductListBlock,
   },
   methods: {
     changeRow_1(e) {
@@ -68,9 +79,8 @@ export default {
           this.createLinkList();
         }
       }else if(this.link_info.length == 0){
-          axios.get("/productInfo.json").then(res=>{
-            this.link_list.forEach(item=>{
-                let product_data = res.data.filter(product=> product.id == item);
+          this.link_list.forEach(item=>{
+                let product_data = this.all_product_list.filter(product=> product.id == item);
                 console.log(item);
                 console.log(product_data);
                 this.link_info.push({
@@ -78,7 +88,6 @@ export default {
                     price: product_data[0].price,
                 })
             })
-    });
       }
     },
     changeCate(cate_num){
@@ -103,7 +112,10 @@ export default {
     mql_2.addEventListener("change", this.changeRow_2);
     this.link_info = []
     this.link_list = []
-    this.createLinkList();
+    axios.get("/productInfo.json").then(res=>{
+            this.all_product_list = res.data;
+            this.createLinkList();
+    });
   }
 };
 </script>

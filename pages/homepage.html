@@ -1,121 +1,157 @@
-
-    <div>
-        <Navbar />
-       <section id="Banner">
+<div>
+  <Navbar />
+  <section id="Banner">
     <div class="bannerpic">
-          <div class="light">
-               <img src="~/assets/homepage/light.svg" alt="light">
-           </div>
-           <div class="leftimg">
-               <img src="~/assets/homepage/banner2.svg" alt="">
-           </div>
-            <div class="centerimg">
-               <img src="~/assets/homepage/banner3.svg" alt="">
-           </div>
-            <div class="rightimg">
-               <img src="~/assets/homepage/banner4.svg" alt="">
-           </div>
-           <h2>徜徉大自然，<br> 享受慢活時光</h2>
+      <div class="light">
+        <img src="~/assets/homepage/light.svg" alt="light">
+      </div>
+      <div class="leftimg">
+        <img src="~/assets/homepage/banner2.svg" alt="">
+      </div>
+      <div class="centerimg">
+        <img src="~/assets/homepage/banner3.svg" alt="">
+      </div>
+      <div class="rightimg">
+        <img src="~/assets/homepage/banner4.svg" alt="">
+      </div>
+      <h2>徜徉大自然，<br> 享受慢活時光</h2>
     </div>
     <!-- 搜尋 -->
     <div class="searchbox">
-        <table>
-             <tr>   
-                <td class="search_title"> 區域選擇</td>
-                 <td>      
-                    <input type="checkbox" v-model="searcharea" value="north"> 北部<br>
-                    <input type="checkbox" v-model="searcharea" value="west"> 中部<br>
-                    <input type="checkbox" v-model="searcharea" value="south"> 南部<br>
-                    <input type="checkbox" v-model="searcharea" value="east"> 東部                  
-            </td>     
-        </tr>
+      <table>
+        <tbody>
           <tr>
-                <td class="search_title">營位類型</td>
-            <td>              
-        <input type="checkbox" v-model="cate" value="both"> 不拘<br>
-       <input type="checkbox" v-model="cate" value="outside"> 雨棚<br>
-       <input type="checkbox" v-model="cate" value="inside"> 室內營帳<br>
-            </td>     
-        </tr>
-        <tr>
+            <td class="search_title"> 區域選擇</td>
+            <td>
+              <input type="checkbox" v-model="searcharea" value="north"> 北部<br>
+              <input type="checkbox" v-model="searcharea" value="west"> 中部<br>
+              <input type="checkbox" v-model="searcharea" value="south"> 南部<br>
+              <input type="checkbox" v-model="searcharea" value="east"> 東部
+            </td>
+          </tr>
+          <tr>
+            <td class="search_title">營位類型</td>
+            <td>
+              <input type="checkbox" v-model="cate" value="both"> 不拘<br>
+              <input type="checkbox" v-model="cate" value="outside"> 雨棚<br>
+              <input type="checkbox" v-model="cate" value="inside"> 室內營帳<br>
+            </td>
+          </tr>
+          <tr>
             <td class="search_title">條件選擇</td>
-        <td>
-            <div>
+            <td>
+              <div>
                 <input type="checkbox" v-model="device" value="all"> 不拘<br>
                 <input type="checkbox" v-model="device" value="night"> 夜景<br>
                 <input type="checkbox" v-model="device" value="car"> 車停帳邊<br>
-            </div>
-            <div>
+              </div>
+              <div>
                 <input type="checkbox" v-model="device" value="grass"> 大草皮<br>
                 <input type="checkbox" v-model="device" value="cloud"> 雲海<br>
                 <input type="checkbox" v-model="device" value="rent"> 可租裝備<br>
-            </div>
-        </td>     
-    </tr>      
-        </table>
-       <div class="searchline"></div>
-       <button>搜尋</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="searchline"></div>
+      <button>搜尋</button>
     </div>
-         
-       </section>
-       <!-- 關於露營蜂 -->
-       <section id="About">
-           <h1>關於露營蜂</h1>
-           <p>如蜜蜂般，一起搭件屬於全家人的快樂時光，享受與大自然為舞之樂！</p>
-           <br><br>
-           <div class="aboutus">
-               <div>
-                   <div class="aboutimg">
-                   <img src="~/assets/about1.svg" alt=""></div>
-               </div>
-               <div>
-                   <ul>
-                       <li v-for="(item,index) in about" :key="index">               
-                              <div><img :src="item.img" alt=""></div>
-                               <div>
-                                   <h2>{{item.title}}</h2>
-                                    <p> {{item.content1}}<br>{{item.content2}}</p>              
-                                </div> 
-                        <br>
-                       </li>
-                   </ul>
-               </div>
-           </div>
-       </section>
-    
-        <!-- 露營地 -->
-       <section id="Camp">
-           <h1>今晚睡帳棚！必訪特色露營地</h1>
-           <p>翩翩飛舞的螢火蟲，滿天星光，<br>
-    不論是只要人到場的豪華網美露營地，或是透過親自動手紮營的營地，都讓能讓人體驗親近大自然的生活。</p>
-     <br><br>
-     <Camp />
-     <nuxt-link to="/camp_category/">
-        <div class="LearnMore"><div > 看更多</div><div><img src="../assets/arrow.svg" alt="">
-           
-        </div></div>
-     </nuxt-link>
-    
-     <!-- 地圖 -->
-       </section>
 
-        <!-- 地圖 -->
-       <section  id="Map">
-        <h1>地圖</h1>
-        <p>建立屬於自己的攻略露營計畫，讓週末與假日時光充滿快樂與挑戰！</p>
-       </section>
-    
-     <!-- 產品 -->
-       <section  id="Product">
-           <h1>露營用品</h1>
-           <p>享受快樂露營時光必備的用具！</p>
+  </section>
+  <!-- 關於露營蜂 -->
+  <section id="About">
+    <h1>關於露營蜂</h1>
+    <p>如蜜蜂般，一起搭件屬於全家人的快樂時光，享受與大自然為舞之樂！</p>
+    <br><br>
+    <div class="aboutus">
+      <div>
+        <div class="aboutimg">
+          <img src="~/assets/about1.svg" alt=""></div>
+      </div>
+      <div>
+        <ul>
+          <li v-for="(item,index) in about" :key="index">
+            <div><img :src="item.img" alt=""></div>
+            <div>
+              <h2>{{item.title}}</h2>
+              <p> {{item.content1}}<br>{{item.content2}}</p>
+            </div>
             <br>
-     <Product />
-           <nuxt-link to="/product_category/">
-            <div class="LearnMore"><div > 看更多</div><div><img src="../assets/arrow.svg" alt="">
-           
-            </div></div>
-           </nuxt-link>
-       </section>
-       <!-- <Footer /> -->
+          </li>
+        </ul>
+      </div>
     </div>
+  </section>
+
+  <!-- 露營地 -->
+  <section id="Camp">
+    <h1>今晚睡帳棚！必訪特色露營地</h1>
+    <p>翩翩飛舞的螢火蟲，滿天星光，<br>
+      不論是只要人到場的豪華網美露營地，或是透過親自動手紮營的營地，都讓能讓人體驗親近大自然的生活。</p>
+    <br><br>
+    <Camp />
+    <nuxt-link to="/camp_category/">
+      <div class="LearnMore">
+        <div> 看更多</div>
+        <div><img src="../assets/arrow.svg" alt="">
+
+        </div>
+      </div>
+    </nuxt-link>
+
+    <!-- 地圖 -->
+  </section>
+
+  <!-- 地圖 -->
+  <section id="Map">
+    <h1>地圖</h1>
+    <p>建立屬於自己的攻略露營計畫，讓週末與假日時光充滿快樂與挑戰！</p>
+  </section>
+
+  <!-- 產品 -->
+  <section id="Product">
+    <h1>露營用品</h1>
+    <p>享受快樂露營時光必備的用具！</p>
+    <br>
+    <!--商品種類頁籤-->
+    <div id="PD_category">
+      <div class="cate_item">
+        <div class="cate_img item_camp"></div>
+        <p>帳篷類</p>
+      </div>
+      <div class="cate_item">
+        <div class="cate_img item_kitchen"></div>
+        <p>客廳/廚房類</p>
+      </div>
+      <div class="cate_item">
+        <div class="cate_img item_dishes"></div>
+        <p>料理類</p>
+      </div>
+      <div class="cate_item">
+        <div class="cate_img item_light"></div>
+        <p>照明類</p>
+      </div>
+      <div class="cate_item">
+        <div class="cate_img item_inside"></div>
+        <p>帳內類</p>
+      </div>
+      <div class="cate_item">
+        <div class="cate_img item_other"></div>
+        <p>其他</p>
+      </div>
+    </div>
+    <div class="recommend_list">
+      <ProductListBlock v-for="product in recommend_product_list" :key="product.id" :product_info="product" class="recommend_item"/>
+    </div>
+    <nuxt-link to="/product_category/">
+      <div class="LearnMore">
+        <div> 看更多</div>
+        <div>
+          <img src="../assets/arrow.svg" alt="">
+        </div>
+      </div>
+    </nuxt-link>
+  </section>
+  <!-- <FooterSection/> -->
+</div>

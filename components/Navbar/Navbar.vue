@@ -11,7 +11,7 @@
                 <nuxt-link to="/product_category/">
                 <div>露營商品</div>
                 </nuxt-link>
-               <nuxt-link to="/ShoppingCart/">
+               <nuxt-link to="/shopping_cart">
                <div>購物車</div>
                </nuxt-link>
         </div>

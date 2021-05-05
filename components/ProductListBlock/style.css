@@ -1,0 +1,111 @@
+/* 商品 list */
+
+.PD_item {
+  flex: 1;
+  height: 400px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  padding: 0 0 10px;
+  overflow: hidden;
+}
+
+
+.PD_item .PD_img {
+  width: 250px;
+  height: 200px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgba(159, 159, 159, 0.144);
+}
+
+.PD_item .PD_img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.PD_item .PD_img img:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.PD_item h3 {
+  font-size: 16px;
+}
+
+.PD_item p {
+  font-size: 20px;
+}
+
+h3,
+p,
+button {
+  margin: 15px;
+}
+
+p {
+  font-size: 1rem;
+  color: gray;
+}
+
+button {
+  width: 90%;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(51, 51, 51, 0.068);
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+@media(max-width: 768px) {
+  .PD_item {
+    min-height: 35vh;
+    height: auto;
+    width: calc(50vw - 25px);
+    padding: 10px 5px;
+  }
+
+  .PD_item .PD_img {
+    width: 100%;
+    height: 15vh;
+  }
+
+  h3,
+  p{
+    margin: 10px;
+  }
+
+  .PD_item h3 {
+    font-size: 14px;
+    height: 50px;
+  }
+  
+  .PD_item p {
+    font-size: 16px;
+  }
+  
+
+  button{
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+  }
+}

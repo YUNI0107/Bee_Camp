@@ -44,5 +44,10 @@
             </div>
         </div>
     </div>
-    <FooterSection class="mobile"/>
+    <div class="bottom_section">
+        <div class="product_list">
+            <ProductListBlock  v-for="product in showList" :key="product.id" :product_info="product" class="product_item"/>
+        </div>
+    </div>
+    <FooterSection/>
 </div>
