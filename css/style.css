@@ -9,7 +9,30 @@ h1{
     font-weight: 500;
     text-align: center;
     padding: 15px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
 }
+h1::after{
+    content: "";
+    position:absolute;
+    top:50%;
+    right:-30px;
+    width: 36px;
+    height: 2px;
+    background-color: cadetblue;
+}
+h1::before{
+    content: "";
+    position:absolute;
+    top:50%;
+    left: -30px;
+    width: 36px;
+    height: 2px;
+    background-color: cadetblue;
+}
+
 h2{
     padding: 10px 0;
     font-weight: 500;
@@ -20,7 +43,7 @@ section{
 }
 /* banner */
 #Banner{
-   border: 1px solid red;
+  /*  border: 1px solid red;*/ 
 }
 .bannerpic{
    /* background-color: rgb(221, 221, 221); */
@@ -29,12 +52,22 @@ section{
     background-repeat: no-repeat;
     background-position: center center ;
 }
+.bannerpic h2{
+    writing-mode: vertical-rl;
+    font-weight: 200;
+    font-size: 36px;
+   position: absolute;
+   right: 10%;
+   top: 15%;
+}
+
+
 .light{
     width: 30px;
     height: auto;
     position: relative;
     left: 45%;
-    border: 1px solid olive;
+    /*border: 1px solid olive;*/
 }
 .leftimg{
     width: 20vw;
@@ -55,22 +88,95 @@ section{
     transform: translateX(-50%);
 }
 .rightimg{
-    width: 350px;
+    width: 150px;
     height: auto;
     display: inline-block;
     position: relative;
     top: 30%;
-    left:5% ;
+    left:10% ;
 }
 
+
+  /* search section */
 .searchbox{
     /* border: 1px solid green; */
     margin: 0 auto;
     width: 70vw;
-    height:190px;
+    position: relative;
+   
     border-radius: 15px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
+
+.searchbox::before{
+    content: "";
+    background-image: url("../assets/homepage/grass1.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: -70%;
+    width: 180px;
+    height: 140px;
+
+}
+ 
+table{
+   width: 100%;
+   display: inline-block;
+   text-align: center;
+
+}
+tr{
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+    vertical-align: top;    
+    margin: 20px;
+}
+tr:last-child{  
+    display: inline-block;
+    text-align: left;
+    width: 35%;
+    vertical-align: top;    
+}
+.search_title{
+    margin-right: 15px;
+    color: gray;
+}
+td{
+    display: inline-block; 
+    vertical-align: top;    
+
+}
+td div{
+    display: inline-block;
+    margin :0 10px 0 0 ;
+    vertical-align: top;    
+   
+}
+.searchline{
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+   background-color: rgb(212, 212, 212);
+}
+button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 16px 0;
+    width: 150px;
+    height: 36px;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 0.5px solid #2A7682;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #8acbd4;
+}
+
+
 
 
 /* 關於露營蜂 */
@@ -87,6 +193,7 @@ p{
 
 
 .aboutus{
+    /*border: 1px solid green;*/
     display: flex;
     flex-wrap: wrap;
     max-width: 1400px;
@@ -96,10 +203,11 @@ p{
 }
 .aboutus div:first-child{
     flex: 1.5;
-    min-width: 350px;
+    /*min-width: 350px;*/
     margin-right: 20px;
     position: relative;
     overflow: hidden;
+    vertical-align: middle;
 }
 .aboutimg{
     width: 100%;
@@ -110,10 +218,11 @@ p{
     overflow: hidden;
     display: inline-block;
 }
+
 .aboutus div:nth-child(2){
-   
+    vertical-align: middle;
     flex: 2;
-    min-width: 350px;
+    /*min-width: 350px;*/
 }
 ul{
    /* border: 1px solid purple;*/
@@ -121,23 +230,51 @@ ul{
 }
 li{
     list-style:none;
-    margin: 0;
+    margin:30px 0;
     padding: 0;
 }
+
+li div:first-child{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+li div:first-child img{
+    position: absolute;
+    height: 100%;
+}
+li div:nth-child(2){
+   
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+li h2{
+    display: inline-block;
+}
+
 li p{
     text-align: left;
     line-height: 1.6rem;
     max-width: 600px;
 }
 
-
 .LearnMore{
-    padding: 10px;
-   /*border: 1px solid red; */
     text-align: right;
-    margin: 20px;
-    text-decoration: none;
-    vertical-align: middle;
 }
 
-
+.LearnMore div{
+    padding: 10px;
+    display: inline-block;
+    position:relative;
+    vertical-align: middle;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
