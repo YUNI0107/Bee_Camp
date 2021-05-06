@@ -1,7 +1,8 @@
 <script>
-import axios from 'axios'
-import FooterSection from "../../components/FooterSection/FooterSection"
-import ProductListBlock from "../../components/ProductListBlock/ProductListBlock"
+import axios from "axios";
+import gsap from "gsap";
+import FooterSection from "../../components/FooterSection/FooterSection";
+import ProductListBlock from "../../components/ProductListBlock/ProductListBlock";
 export default {
   data() {
     return {
@@ -36,22 +37,25 @@ export default {
       link_list: [],
       link_info: [],
       all_product_list: [],
+      map_list: [],
+      green_name: false
     };
   },
   computed: {
-    showList(){
-        return this.all_product_list.map(item =>{
-          return {
-            id: item.id,
-                   name: item.name,
-                   price: item.price,
-          }
-        })
+    showList() {
+      return this.filterList(this.current_cate);
+    },
+    top_height() {
+      if (this.$refs.top) {
+        return this.$refs.top.offsetHeight;
+      } else {
+        return 1000;
+      }
     }
   },
-  components:{
+  components: {
     FooterSection,
-    ProductListBlock,
+    ProductListBlock
   },
   methods: {
     changeRow_1(e) {
@@ -78,26 +82,63 @@ export default {
         } else {
           this.createLinkList();
         }
-      }else if(this.link_info.length == 0){
-          this.link_list.forEach(item=>{
-                let product_data = this.all_product_list.filter(product=> product.id == item);
-                console.log(item);
-                console.log(product_data);
-                this.link_info.push({
-                    name: product_data[0].name,
-                    price: product_data[0].price,
-                })
-            })
+      } else if (this.link_info.length == 0) {
+        this.link_list.forEach(item => {
+          let product_data = this.all_product_list.filter(
+            product => product.id == item
+          );
+          this.link_info.push({
+            name: product_data[0].name,
+            price: product_data[0].price
+          });
+        });
       }
     },
-    changeCate(cate_num){
-        this.link_info = [];
-        this.link_list = [];
-        this.createLinkList();
-        this.current_cate = cate_num;
+    changeCate(cate_num) {
+      this.link_info = [];
+      this.link_list = [];
+      this.createLinkList();
+      this.current_cate = cate_num;
+      document.documentElement.scrollTop = this.top_height;
+      document.body.scrollTop = this.top_height;
     },
+    filterList(cate) {
+      if (cate !== 0) {
+        let cate_name = this.cate_list[cate - 1].cate;
+        this.map_list = this.all_product_list.filter(
+          element => element.cate == cate_name
+        );
+        return this.map_list.map(item => {
+          return {
+            id: item.id,
+            name: item.name,
+            price: item.price
+          };
+        });
+      } else {
+        return this.all_product_list.map(item => {
+          return {
+            id: item.id,
+            name: item.name,
+            price: item.price
+          };
+        });
+      }
+    },
+    scrollGreen() {
+      let scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      if (scrollTop > this.top_height - 600) {
+        this.green_name = true;
+      } else {
+        this.green_name = false;
+      }
+    }
   },
   mounted() {
+    // grid網格的變化
     let mounted_w = window.innerWidth;
     if (mounted_w > 1400) {
       this.grid_row = 8;
@@ -110,15 +151,31 @@ export default {
     let mql_2 = window.matchMedia("(max-width: 1200px)");
     mql_1.addEventListener("change", this.changeRow_1);
     mql_2.addEventListener("change", this.changeRow_2);
-    this.link_info = []
-    this.link_list = []
-    axios.get("/productInfo.json").then(res=>{
-            this.all_product_list = res.data;
-            this.createLinkList();
+    this.link_info = [];
+    this.link_list = [];
+    axios.get("/productInfo.json").then(res => {
+      this.all_product_list = res.data;
+      this.createLinkList();
     });
+
+    // 網格動畫
+    this.$nextTick(() => {
+      gsap.from(".right .row_1:nth-child(even), .right .row_3:nth-child(even), .right .row_5:nth-child(even), .right .row_2:nth-child(odd), .right .row_4:nth-child(odd)", {
+        opacity: 0,
+        duration: .5,
+        stagger: 0.05,
+      })
+      ;
+    });
+
+    // 商品Nav的變化
+    window.addEventListener("scroll", this.scrollGreen);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.scrollGreen);
   }
 };
 </script>
 
-<style src="./style.css"></style>
-<template scoped src="./template.html"></template>
+<style src="./style.css" scoped></style>
+<template src="./template.html"></template>

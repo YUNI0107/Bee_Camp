@@ -1,5 +1,5 @@
 <div class="product_menu">
-    <div class="top_section">
+    <div class="top_section" ref="top">
         <div class="left">
             <div class="mobile_title_section">
                 <p>露營器具</p>
@@ -10,13 +10,17 @@
                     <div class="cate_img">
                         <h1>ALL</h1>
                     </div>
-                    <p class="cate_name">全部</p>
+                    <div class="cate_name_block" :class="{'green_name': green_name}">
+                        <p class="cate_name">全部</p>
+                    </div>
                 </div>
                 <div class="cate_item" v-for="(item,index) in cate_list" @click="changeCate(index+1)" :class="{'green': current_cate == index+1}">
                     <div class="cate_img">
                         <img :src="require(`../../assets/ProductLeftNav/${item.cate}.png`)">
                     </div>
-                    <p class="cate_name">{{ item.cate_text }}</p>
+                    <div class="cate_name_block" :class="{'green_name': green_name}">
+                        <p class="cate_name">{{ item.cate_text }}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,7 +50,9 @@
     </div>
     <div class="bottom_section">
         <div class="product_list">
-            <ProductListBlock  v-for="product in showList" :key="product.id" :product_info="product" class="product_item"/>
+            <transition-group name="fade">
+                <ProductListBlock  v-for="product in showList" :key="product.id" :product_info="product" class="product_item fade-item"/>
+            </transition-group>
         </div>
     </div>
     <FooterSection/>

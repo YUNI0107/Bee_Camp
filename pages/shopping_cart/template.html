@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="cart_total_block">
-          <h2 v-if="cart_list.length == 0">並無選購商品，<span><NuxtLink to="/product_menu">歡迎前往選購</NuxtLink></span></h2>
+          <h2 v-if="cart_list.length == 0">並無選購商品，<span><NuxtLink to="/product_category">歡迎前往選購</NuxtLink></span></h2>
           <transition-group name="blockmove">
             <CartListBlock v-for="(product,index) in cart_list" :key="product.id" :product="product"
               :list_length="cart_list.length" :index="index+1" class="blockmove-item"/>

@@ -79,8 +79,8 @@ a {
   .PD_item {
     min-height: 35vh;
     height: auto;
-    width: calc(50vw - 25px);
-    padding: 10px 5px;
+    width: 45vw;
+    padding: 0 5px 10px 5px;
   }
 
   .PD_item .PD_img {
