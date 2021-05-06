@@ -1,6 +1,7 @@
 <script>
 import axios from "axios";
 import gsap from "gsap";
+import Navbar from '../../components/Navbar/Navbar'
 import FooterSection from "../../components/FooterSection/FooterSection";
 import ProductListBlock from "../../components/ProductListBlock/ProductListBlock";
 export default {
@@ -55,7 +56,8 @@ export default {
   },
   components: {
     FooterSection,
-    ProductListBlock
+    ProductListBlock,
+    Navbar
   },
   methods: {
     changeRow_1(e) {

@@ -1,6 +1,7 @@
 <script>
 import axios from "axios"
 import { mapState } from 'vuex'
+import Navbar from "../../components/Navbar/Navbar"
 import ProductLeftNav from "../../components/ProductLeftNav/ProductLeftNav"
 import PicZoom from "../../components/PicZoom/PicZoom"
 import FooterSection from "../../components/FooterSection/FooterSection"
@@ -41,6 +42,7 @@ export default {
         ProductLeftNav,
         FooterSection,
         PicZoom,
+        Navbar,
     },
     methods:{
         changeBigImg(num){

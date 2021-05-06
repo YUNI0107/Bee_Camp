@@ -507,6 +507,39 @@
         padding-top: 20px;
     }
 
+    /* 截除catename效果 */
+    .cate_item .cate_name{
+        font-size: 16px;
+        margin-left: 0px;
+        color: #ffffff !important;
+    }
+    
+    .cate_item .cate_name_block.green_name{
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        width: auto;
+        height: auto;
+        margin-left: 0px;
+        background-color: transparent;
+        border-radius: 0 ;
+        box-shadow: none;
+        transition: 1s;
+    }
+    
+    .cate_item .cate_name_block.green_name .cate_name{
+        opacity: 1;
+    }
+
+    .cate_item:hover .cate_name_block.green_name{
+        padding: 0px;
+    }
+    
+    .cate_item:hover .cate_name_block.green_name .cate_name{
+        animation: none;
+    }
+
 }
 
 @media(max-width: 768px){

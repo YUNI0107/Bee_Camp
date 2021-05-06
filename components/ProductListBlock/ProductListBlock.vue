@@ -1,5 +1,4 @@
 <script>
-
 import axios from "axios";
 
 export default {
@@ -16,6 +15,7 @@ export default {
     },
     methods:{
         addCart(){
+            this.$store.commit('other/toggleNav', false)
             this.$store.commit('cart/addCart', {
                 id: this.product_info.id,
                 num: 1,

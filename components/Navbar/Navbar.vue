@@ -1,43 +1,55 @@
-<template>
-    <div>
-        <div class="container">
-            <nuxt-link to="/"> <div class="logo"><img src="../../assets/logo.svg" alt=""></div></nuxt-link>
-        <div class="navbar">
-             <div>關於露營蜂</div>
-             <nuxt-link to="/camp_category/">
-             <div>特色露營地</div>
-             </nuxt-link>
-            <div>我的露營地圖</div>
-                <nuxt-link to="/product_category/">
-                <div>露營商品</div>
-                </nuxt-link>
-               <nuxt-link to="/shopping_cart">
-               <div>購物車</div>
-               </nuxt-link>
-        </div>
-        </div>
-    </div>
-</template>
-<style scoped>
-/* lr */
-.container{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 70px;
+<script>
+export default {
+    props: ["link_color","logo_color","back_color"],
+    data(){
+        return{
+            lastY: 0,
+            mobile_nav: false,
+        }
+    },
+    computed:{
+        list_length(){
+            let total = 0
+            this.$store.state.cart.cart_list.forEach(element=>{
+                total += element.num
+            })
+            return total
+        },
+        nav_hide(){
+            return this.$store.state.other.nav_hide
+        }
+    },
+    watch:{
+        list_length(){
+            setTimeout(()=>{
+                this.$refs.ball.classList.add('num_animation')
+            },0.0001)
+            this.$refs.ball.classList.remove('num_animation')
+        }
+    },
+    methods:{
+        scrollHide(){
+            if( window.scrollY > this.lastY && window.scrollY >  100){
+                this.$store.commit('other/toggleNav', true)
+            }else{
+                this.$store.commit('other/toggleNav', false)
+            }
+            this.lastY = window.scrollY;
+        },
+        toggleNav(){
+            this.mobile_nav = !this.mobile_nav;
+        },
+        mobileNav(){
+            this.mobile_nav = false;
+        }
+    },
+    mounted(){
+        window.addEventListener("scroll", this.scrollHide)
+    },
+    destroyed(){
+        window.removeEventListener("scroll", this.scrollHide)
+    }
 }
-.logo{
-    width: 100px;
-}
-.navbar{
- display: flex;
- width: 50%;
- justify-content: space-around;
-}
-a{
-     text-decoration:none;
-    color: black;
-}
-
-/* lr */
-    
-</style>
+</script>
+<template src="./template.html"></template>
+<style src="./style.css" scoped></style>

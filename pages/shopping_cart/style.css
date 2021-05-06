@@ -17,7 +17,7 @@
   flex: 2;
   width: 100%;
   padding: 0 70px;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 200px;
 }
 
@@ -224,6 +224,21 @@
   font-weight: bold;
 }
 
+.right_pay_section .warn{
+  color: #2A7682;
+  display: none;
+  width: 100%;
+  margin: 5px 0  20px 0  !important;
+  padding: 0  !important;
+  line-height: 20px;
+  background-color: #E0E0E0;
+  font-weight: normal !important;
+}
+
+.right_pay_section .warn.warnshow{
+  display: block !important;
+}
+
 .right_pay_section textarea {
   resize: none;
   background-color: #1F5760;
@@ -237,6 +252,7 @@
   width: calc(100% - 62px);
   height: 60px;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .right_pay_section .button_section {
@@ -365,6 +381,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.mobile_pay_section .warn{
+  color: #2A7682;
+  display: none;
+  width: 100%;
+  margin: 5px 0  20px 0  !important;
+  padding: 0  !important;
+  line-height: 20px;
+  background-color: #E0E0E0;
+  font-weight: normal !important;
+}
+
+.mobile_pay_section .warn.warnshow{
+  display: inline;
+}
+
 
 /* 第三步驟 */
 .step_3 {

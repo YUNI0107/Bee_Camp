@@ -1,12 +1,14 @@
 <div class="each_block">
   <div class="cart_block">
     <div class="content_part1 ">
-      <div class="product_img">
-        <img :src="require(`../../assets/ProductImage/${product.id}_bigimg.jpeg`)" alt="商品縮圖">
-      </div>
-      <p class="product_name mobile_none">
-        {{ name }}
-      </p>
+      <nuxt-link :to="`/product/${product.id}`">
+        <div class="product_img">
+          <img :src="require(`../../assets/ProductImage/${product.id}_bigimg.jpeg`)" alt="商品縮圖">
+        </div>
+        <p class="product_name mobile_none">
+          {{ name }}
+        </p>
+      </nuxt-link>
     </div>
     <div class="mobile_right">
       <div class="content_mobile">
@@ -31,7 +33,7 @@
         </div>
       </div>
       <div class="content_part4 ">
-        <div class="delete_img del_mobile_none" @click="deleteProduct" >
+        <div class="delete_img del_mobile_none" @click="deleteProduct">
           <img src="../../assets/ShoppingCart/delete.png" alt="刪除">
         </div>
         <button @click="deleteProduct" class="delete_btn del_mobile">刪除</button>
