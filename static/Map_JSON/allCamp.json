@@ -105,8 +105,8 @@
                 "facebook": "https://www.facebook.com/secretisland.villa/",
                 "ins": "https://www.instagram.com/secretisland_villa/"
             },
-            "key_des": "新推星空帳伴繁星入眠",
-            "des": "藏身北海岸坐擁無敵海景的半島秘境，主打免裝備奢華露營，全新推出媲美約旦的半透明星空帳，伴著星空入眠，還有蒙古跨海搬來8頂蒙古包、土耳其進口神殿帳，隨處都可享受無敵海景！"
+            "key_des": "聽流水蟲鳴鳥叫 與森林一同呼吸",
+            "des": "那一村豪華露營 Glamping 內提供多項的活動的安排與遊憩設施，適合親子或三五好友一同前來放鬆體驗。 Glamping是一種豪華露營、 野奢莊園 、野奢酒店的概念，要帶給您一種全新的露營體驗"
             ,
             "book_web":{
                 "web": "https://www.nayivilla.com.tw/",
@@ -202,7 +202,7 @@
             "place_name": "東風綠活" ,
             "number": "04",
             "glamping": true,
-            "big_img": "north/D_big_img.jpg",
+            "big_img": "north/D_big_img.jpeg",
             "img" : [
                 "north/D_img_1.jpg",
                 "north/D_img_2.jpg",

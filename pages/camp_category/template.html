@@ -1,0 +1,107 @@
+<div class="camp_cate">
+  <Navbar :link_color="'white'" :logo_color="'normal'" :back_color="'trans'" />
+  <div class="left">
+    <div class="top">
+      <h2 class="title">今晚睡帳棚！ 必訪特色露營地</h2>
+      <div class="search_section">
+        <div class="mobile_people mobile">
+          <div class="ani_people">
+            <img src="../../assets/CampCategory/ani_people.png">
+          </div>
+        </div>
+        <h2 class="map_info mobile">只要按愛心，就可以打點收藏露營地了喔！</h2>
+        <div class="place_section">
+          <input type="radio" value="n" id="n" v-model="place">
+          <label class="place_label" for="n">北</label>
+          <input type="radio" value="s" id="s" v-model="place">
+          <label class="place_label" for="s">南</label>
+          <input type="radio" value="e" id="e" v-model="place">
+          <label class="place_label" for="e">東</label>
+          <input type="radio" value="w" id="w" v-model="place">
+          <label class="place_label" for="w">西</label>
+        </div>
+        <div class="cate_section">
+          <input type="checkbox" value="glamping" id="g" v-model="cate">
+          <label for="g">豪華露營</label>
+          <input type="checkbox" value="camping" id="c" v-model="cate">
+          <label for="c">紮營露營</label>
+        </div>
+        <button class="hide_toggle" @click="show_more = !show_more">
+          <img src="../../assets/CampCategory/slide.png" :class="{'show': show_more}">
+        </button>
+        <div class="hide_section" :class="{'show': show_more}">
+          <div class="type_section">
+            <p class="type">營位類型</p>
+            <div class="choice">
+              <div class="choice_block">
+                <input type="checkbox" value="indoor_type" id="indoor_type">
+                <label for="indoor_type">室內營帳</label>
+              </div>
+              <div class="choice_block">
+                <input type="checkbox" value="rain_type" id="rain_type">
+                <label for="rain_type">雨棚</label>
+              </div>
+            </div>
+          </div>
+          <div class="require_section">
+            <p class="require">條件選擇</p>
+            <div class="choice">
+              <div class="choice_block">
+                <input type="checkbox" value="night" id="night" v-model="night">
+                <label for="night">夜景</label>
+              </div>
+              <div class="choice_block">
+                <input type="checkbox" value="grass" id="grass" v-model="grass">
+                <label for="grass">大草皮</label>
+              </div>
+              <div class="choice_block">
+                <input type="checkbox" value="cloud" id="cloud">
+                <label for="cloud">雲海</label>
+              </div>
+              <div class="choice_block">
+                <input type="checkbox" value="rent" id="rent">
+                <label for="rent">可租裝備</label>
+              </div>
+              <div class="choice_block">
+                <input type="checkbox" value="river" id="river">
+                <label for="river">河邊</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="search_btn">
+        <div class="search_icon">
+          <img src="../../assets/CampCategory/search.png" alt="搜尋">
+        </div>
+        <p>搜尋</p>
+      </button>
+    </div>
+    <div class="map_section">
+      <div class="little_map" @click="toggleModal(true)">
+        <MapItem class="map_item" />
+        <div class="ani_people mobile_none">
+          <img src="../../assets/CampCategory/ani_people.png">
+        </div>
+      </div>
+      <h2 class="map_info mobile_none">只要按愛心，<span><br /></span>
+        就可以打點收藏露營地了喔！</h2>
+    </div>
+  </div>
+  <div class="right" ref="hold">
+    <div class="cursor" ref="cursor" :class="{'click': cusor_click}"></div>
+    <div class="hold_block" ref="hold_in">
+      <CampBlock v-for="(item,index) in showList" class="camp_block_out" :key="index" :dark_back="index % 2 !== 0"
+        :camp_info="item" :index="index" />
+    </div>
+    <div class="direction_section">
+      <button class="left_btn click_btn" @click="scrollList('l')">
+        <img src="../../assets/CampCategory/left_btn.png" alt="向左滑">
+      </button>
+      <button class="right_btn click_btn" @click="scrollList('r')">
+        <img src="../../assets/CampCategory/right_btn.png" alt="向右滑">
+      </button>
+    </div>
+  </div>
+  <MapModal v-if="modal" @toggleModal="toggleModal" />
+</div>

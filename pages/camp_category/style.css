@@ -1,0 +1,476 @@
+.camp_cate{
+    display: flex;
+    overflow: hidden;
+}
+
+.mobile_none{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
+.left{
+    flex: 1;
+    height: 100vh;
+    padding: 80px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left .title{
+    text-align: center;
+    color: #2A7682;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.left .search_section{
+    max-width: 320px;
+    width: 95%;
+    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.4);
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.left .search_section .place_section{
+    display: flex;
+    justify-content: center;
+}
+
+.left .search_section .place_section input{
+    appearance: none;
+}
+
+.left .search_section .place_label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(153, 153, 153, 0.295);
+    color: #999;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.left .search_section .place_section input:checked + label{
+    color: black;
+    border: solid 1.5px #4BA795;
+    box-shadow: none;
+}
+
+.left .search_section .cate_section{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.left .search_section .cate_section input{
+    appearance: none;
+}
+
+.left .search_section .cate_section label{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    min-width: 100px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(153, 153, 153, 0.295);
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999;
+}
+
+.left .search_section .cate_section input:checked + label{
+    border: solid 1px #4BA795;
+    box-shadow: none;
+    color: black;
+}
+
+.left .search_section .hide_toggle{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.left .search_section .hide_toggle img{
+    width: 15px;
+    transition: .2s;
+}
+
+.left .search_section .hide_toggle .show{
+    transform: rotate(-180deg);    
+}
+
+.left .search_section .hide_section{
+    box-sizing: border-box;
+    padding:  0;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.left .search_section .hide_section.show{
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.left .search_section .hide_section input{
+    position: relative;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    box-shadow:  inset 0px 0px 5px rgba(51, 51, 51, 0.132);
+    outline: none;
+}
+
+
+.left .search_section .hide_section input:checked:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../../assets/CampCategory/check.png);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+
+.left .search_section .type_section, .left .search_section .require_section{
+    display: flex;
+    margin: 10px 0;
+}
+
+.left .search_section .type_section p , .left .search_section .require_section p{
+    display: inline-block;
+    min-width: 60px;
+    width: 60px;
+    margin-right: 10px;
+    color: #4BA795;
+    font-size: 14px;
+}
+
+.left .search_section .hide_section .choice_block{
+   display: inline-block;
+}
+
+
+.left .search_section .hide_section label{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 10px 10px 0;
+}
+
+.left .search_btn{
+    border: none;
+    background-color: transparent;
+    width: 150px;
+    padding: 5px 10px;
+    border: solid 1px #4BA795;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.left .search_btn:hover{
+    background-color: rgb(244, 244, 244);
+}
+
+.left .search_btn .search_icon{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.left .search_btn .search_icon img{
+    width: 100%;
+}
+
+/* 地圖區 */
+.left .map_section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.left .map_section .ani_people{
+    width: 150px;
+    min-width: 150px;
+    position: absolute;
+    z-index: 2;
+    bottom: -80px;
+    left: -30px;
+}
+
+.left .map_section .ani_people img{
+    width: 100%;
+}
+
+.left .little_map{
+    position: relative;
+    z-index: 1;
+    width: 240px;
+    height: 240px;
+    cursor: pointer;
+}
+
+.left .map_item{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.left .map_section .map_info{
+    position: absolute;
+    color: #555;
+    font-size: 10px;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: right;
+}
+
+
+.right{
+    flex: 4;
+    background-color: #2A7682;
+    height: 100vh;
+    position: relative;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+.right .hold_block{
+    position: absolute;
+    display: flex;
+}
+
+
+.right .direction_section{
+    position: fixed;
+    z-index: 10;
+    bottom: 70px;
+    right: 100px;
+}
+
+.right .direction_section .click_btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.right .direction_section .click_btn:hover{
+    filter: brightness(1.2);
+}
+
+.right .direction_section .left_btn{
+    margin-right: 20px;
+}
+
+.cursor{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: solid 1px #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 100;
+    pointer-events: none;
+    display: none;
+    transition: transform .5s;
+    transform-origin: center center;
+}
+
+.cursor.click{
+    transform: scale(0.5) translate(-100%, -100%);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.right:hover .cursor{
+    display: block;
+}
+
+@media(max-width: 768px){
+    .camp_cate{
+        flex-direction: column;
+    }
+
+    .mobile_none{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .left{
+        flex: 1;
+        height: 400px;
+        padding: 0;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .left .top{
+       order: 2;
+    }
+
+    .left .search_section{
+        background-color: #fff;
+        position: relative;
+        z-index: 5;
+        max-width: 500px;
+        width: 95%;
+        margin-top: 100px;
+    }
+
+    .left .search_section .hide_section.show{
+        height: 100px;
+    }
+
+    .mobile_people{
+        position: absolute;
+        top: -80px;
+        left: -15px;
+        z-index: 3;
+    }
+
+    .mobile_people .ani_people{
+        min-width: 150px;
+        width: 150px;
+    }
+
+    .mobile_people .ani_people img{
+        width: 100%;
+    }
+
+    .search_section .map_info{
+        position: absolute;
+        font-size: 14px;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        background-color: #4BA795;
+        box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.1);
+        border: solid 1px #fff;
+        color: #fff;
+        font-weight: normal;
+        padding: 10px 15px;
+        right: 0;
+        top: -50px;
+        z-index: 4;
+    }    
+
+    /* 地圖區 */
+    .left .map_section{
+        order: 1;
+    }
+
+    .left .little_map{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .left .map_item{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        overflow: none;
+        border-radius: 0;
+        pointer-events: none;
+    }
+
+    .right{
+        flex: 4;
+        height: auto;
+        position: relative;
+        overflow-x: scroll;
+        cursor: initial;
+    }
+
+    .right .hold_block{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right .direction_section{
+        display: none;
+    }
+
+    .right:hover .cursor{
+        display: none;
+    }
+    
+
+}
+
+
+@media(max-width: 576px){
+    .mobile_people{
+        left: -20px;
+        top: -110px;
+    }
+
+    .mobile_people .ani_people{
+        min-width: auto;
+        width: 150px;
+        padding: 20px;
+    }
+
+    .search_section .map_info{
+        font-size: 12px;
+        max-width: 280px;
+        width: 70%;
+        padding: 10px 10px;
+        right: 0;
+        top: -50px;
+        z-index: 4;
+    }    
+}
