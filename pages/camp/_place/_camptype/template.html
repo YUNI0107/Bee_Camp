@@ -1,0 +1,107 @@
+<div class="camp_section">
+  <Navbar :link_color="'white'" :logo_color="'none'" :back_color="'green_trans'" />
+  <CampLeftNav :camptype="camptype" :place="place" :rain_type="camp_info ? camp_info.type.rain_type : false" :indoor_type=" camp_info ? camp_info.type.indoor_type : false"/>
+  <div class="camp_inside_section">
+    <div class="left">
+      <div class="top_section">
+        <div class="first_info">
+          <h2 class="number">{{ camp_info ? camp_info.number : '00' }}</h2>
+          <div class="links">
+            <a target="_blank" v-if="camp_info && camp_info.links.web" :href="camp_info ? camp_info.links.web : '' ">
+                <div class="link_img web_img">
+                  <img src="../../../../assets/CampPage/web.png" alt="網頁">
+                </div>
+            </a>
+            <a v-if="camp_info && camp_info.links.facebook" target="_blank" :href="camp_info ? camp_info.links.facebook : '' ">
+                <div class="link_img fb_img">
+                  <img src="../../../../assets/CampPage/fb.png" alt="粉絲專頁">
+                </div>
+            </a>
+            <a v-if="camp_info && camp_info.links.ins" target="_blank" :href="camp_info ? camp_info.links.ins: '' ">
+                <div class="link_img ins_img">
+                  <img src="../../../../assets/CampPage/ins.png" alt="instagram">
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="detial_info">
+          <h1 class="name">
+            <span v-if="camp_info">{{ camp_info.place_name }}</span>
+            <span>
+              <div class="like_section">
+                <input type="checkbox" name="like" id="like" v-model="like">
+                <label for="like">
+                  <img class="unlike" src="../../../../assets/Map/unlike.png" alt="unlike">
+                  <img class="like" src="../../../../assets/Map/like.png" alt="like">
+                </label>
+              </div>
+            </span>
+          </h1>
+          <div class="place_section">
+            <div class="place_img">
+              <img src="../../../../assets/CampCategory/location.png">
+            </div>
+            <p v-if="camp_info">{{ camp_info.place }}</p>
+          </div>
+          <p class="des" v-if="camp_info">{{ camp_info.des }}</p>
+          <div class="book_web" v-if="camp_info">
+            <a :href="camp_info.book_web.web" target="_blank"><button>前往訂位</button></a>
+            <a :href="'tel:'+camp_info.book_web.phone"><button>電話訂位</button></a>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="price_section">
+          <h3>帳位價格</h3>
+          <table>
+            <thead>
+                <tr>
+                    <td>帳位</td>
+                    <td>定價</td>
+                    <td>平日</td>
+                    <td>假日</td>
+                </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(item,index) in price_list" :key="index">
+                <td>{{ item.desc }}</td>
+                <td>NT. {{ item.price }}</td>
+                <td>NT. {{ item.weekdays_price }}</td>
+                <td>NT. {{ item.holiday_price }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="equipment_section">
+          <h3>相關設施</h3>
+          <div class="tag equipment_tag" v-for="item in equipment_list" :key="item">{{ item }}</div>
+          <div class="require_section">
+            <div class="tag require_tag" v-for="item in require_list" :key="item">{{ item }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="map_section">
+        <div class="little_map" @click="toggleModal(true)">
+          <MapItem class="map_item" />
+          <h2 class="map_info mobile_none">只要按愛心，<span><br /></span>
+            就可以打點收藏露營地了喔！</h2>
+        </div>
+      </div>
+    </div>
+    <MapModal v-if="modal" @toggleModal="toggleModal" />
+    <div class="right">
+      <div class="big_img">
+          <img v-if="camp_info" :src="require(`../../../../assets/${camptype_pic}/${camp_info.big_img}`)">
+      </div>
+      <div class="little_imgs">
+          <div class="little_block" @click="openPic(0)">
+              <img v-if="camp_info" :src="require(`../../../../assets/${camptype_pic}/${camp_info.big_img}`)">
+          </div>
+          <div class="little_block" v-for="(item,index) in camplittle_img" @click="openPic(index+1)">
+              <img v-if="camp_info" :src="require(`../../../../assets/${camptype_pic}/${item}`)" alt="">
+          </div>
+      </div>
+    </div>
+  </div>
+  <PicZoom :current_pic="current_pic" @picZoom="picZoom" v-if="piczoom" />
+  <FooterSection />
+</div>

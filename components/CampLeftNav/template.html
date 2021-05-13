@@ -1,0 +1,17 @@
+<div class="left_section">
+    <div class="top_section">
+        <div class="place">
+            <p>{{ place_name }}</p>
+        </div>
+        <div class="cate_img">
+            <img v-if="camptype" :src="require(`../../assets/CampPage/${camptype}.png`)" :title="camptype_name">
+        </div>
+        <p class="tag" v-if="indoor_type">室內營帳</p>
+        <p class="tag" v-if="rain_type">雨棚</p>
+    </div>
+    <div class="back">
+        <div class="back_img" @click="backPage">
+            <img src="../../assets/ProductLeftNav/back.png" alt="回到上一頁">
+        </div>
+    </div>
+</div>

@@ -275,7 +275,7 @@
     background-color: #2A7682;
     height: 100vh;
     position: relative;
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-behavior: smooth;
     cursor: none;
 }

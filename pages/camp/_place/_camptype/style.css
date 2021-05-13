@@ -1,0 +1,300 @@
+.camp_section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #2A7682;
+  overflow: hidden;
+}
+
+.camp_inside_section {
+  display: flex;
+  padding-left: 100px;
+}
+
+.left {
+  flex: 2;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 80px;
+}
+
+.left .first_info {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+}
+
+.left .first_info .number {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.left .first_info .links {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  padding-bottom: 5px;
+}
+
+.left .first_info .links .link_img {
+  width: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.left .first_info .links .link_img img {
+  width: 100%;
+}
+
+.left .detial_info .name {
+  position: relative;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left .place_section {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.left .place_section .place_img {
+  width: 14px;
+  margin-right: 5px;
+}
+
+.left .place_section .place_img img {
+  width: 100%;
+}
+
+.left .des {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.left .book_web {
+  margin-top: 20px;
+}
+
+.left .book_web button {
+  border: none;
+  background-color: transparent;
+  background-color: #fff;
+  border: solid #4BA795 1px;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #4BA795;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.left .book_web button:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+.left .book_web button:nth-child(1) {
+  margin-right: 10px;
+}
+
+.like_section {
+  padding-right: 10px;
+}
+
+.like_section img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.like_section input[type="checkbox"] {
+  appearance: none;
+}
+
+.like_section input[type="checkbox"]~label .like {
+  display: none;
+}
+
+.like_section input[type="checkbox"]~label .unlike {
+  display: inline-block;
+}
+
+.like_section input[type="checkbox"]:checked~label .like {
+  display: inline-block;
+}
+
+.like_section input[type="checkbox"]:checked~label .unlike {
+  display: none;
+}
+
+.like_section img {
+  filter: brightness(0) invert(1);
+}
+
+.left .line {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.left .price_section {
+  margin-top: 20px;
+}
+
+.left .price_section h3,
+.left .equipment_section h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.left .price_section table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.left .price_section table thead{
+    background-color: #fff;
+    color: #1F5760;
+}
+
+.left .price_section td {
+  border: solid 1px #fff;
+  padding: 5px 10px;
+}
+
+
+.left .tag {
+  display: inline-block;
+  padding: 3px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.left .require_section {
+  margin-top: 10px;
+}
+
+.left .equipment_section {
+  margin-top: 20px;
+}
+
+.left .equipment_section .tag {
+  background-color: #1F5760;
+  color: #fff;
+  margin: 5px 3px;
+}
+
+.left .equipment_section .require_section .tag {
+  background-color: #fff;
+  color: #2A7682;
+}
+
+/* 地圖區 */
+.left .map_section {
+  position: relative;
+  z-index: 10;
+  margin-left: -50px;
+  margin-top: 50px;
+}
+
+.left .little_map {
+  position: relative;
+  z-index: 1;
+  max-width: 240px;
+  max-height: 240px;
+  width: 20vw;
+  height: 20vw;
+  cursor: pointer;
+}
+
+.left .map_item {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.left .map_section .map_info {
+  position: absolute;
+  right: -180px;
+  bottom: 0;
+  color: #fff;
+  line-height: 28px;
+  font-size: 14px;
+  z-index: 3;
+  margin-left: 20px;
+}
+
+
+.right {
+  flex: 3;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.right .big_img {
+  width: 100%;
+  height: 750px;
+  background-color: #fff;
+}
+
+.right .big_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right .little_imgs {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -60px;
+  overflow-x: auto;
+}
+
+.right .little_imgs .little_block {
+  background-color: #999;
+  min-width: 130px;
+  min-height: 130px;
+  width: 130px;
+  height: 130px;
+  margin: 0 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(94, 94, 94, 0.486);
+}
+
+.right .little_imgs .little_block:nth-child(1){
+  margin-left: auto;
+}
+
+.right .little_imgs .little_block:hover {
+  filter: brightness(0.9);
+}
+
+.right .little_imgs .little_block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

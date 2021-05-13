@@ -13,12 +13,12 @@
         <div class="place_section">
           <input type="radio" value="n" id="n" v-model="place">
           <label class="place_label" for="n">北</label>
+          <input type="radio" value="c" id="c" v-model="place">
+          <label class="place_label" for="c">中</label>
           <input type="radio" value="s" id="s" v-model="place">
           <label class="place_label" for="s">南</label>
           <input type="radio" value="e" id="e" v-model="place">
           <label class="place_label" for="e">東</label>
-          <input type="radio" value="w" id="w" v-model="place">
-          <label class="place_label" for="w">西</label>
         </div>
         <div class="cate_section">
           <input type="checkbox" value="glamping" id="g" v-model="cate">
@@ -65,6 +65,10 @@
               <div class="choice_block">
                 <input type="checkbox" value="river" id="river">
                 <label for="river">河邊</label>
+              </div>
+              <div class="choice_block">
+                <input type="checkbox" value="car" id="car">
+                <label for="car">車位</label>
               </div>
             </div>
           </div>
