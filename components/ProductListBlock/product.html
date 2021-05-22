@@ -1,17 +1,13 @@
-<div>
-  <!--商品 list-->
-  <div id="PD_list">
-    <div class="PD_item">
-      <nuxt-link :to="`/product/${product_info.id}`">
-        <div class="PD_img">
-          <img v-if="product_info.id" :src="require(`../../assets/ProductImage/${product_info.id}_bigimg.jpeg`)">
-        </div>
-      </nuxt-link>
-      <nuxt-link :to="`/product/${product_info.id}`">
-        <h3>{{ product_name }}</h3>
-      </nuxt-link>
-      <p>NT${{ product_info.price }}</p>
-      <button @click.stop="addCart">加入購物車</button>
+<!--商品 list-->
+<div class="PD_item">
+  <nuxt-link :to="`/product/${product_info.id}`">
+    <div class="PD_img">
+      <img v-if="product_info.id" :src="require(`../../assets/ProductImage/${product_info.id}_bigimg.jpeg`)" ref="r_img">
     </div>
-  </div>
+  </nuxt-link>
+  <nuxt-link :to="`/product/${product_info.id}`">
+    <h3>{{ product_name }}</h3>
+  </nuxt-link>
+  <p>NT${{ product_info.price }}</p>
+  <button @click.stop="addCart">加入購物車</button>
 </div>

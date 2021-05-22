@@ -1,51 +1,58 @@
 <div class="map">
-    <client-only>
-      <l-map style="height: 100%; width: 100%" :zoom="zoom" :center="center" @update:zoom="zoomUpdated"
-        @update:center="centerUpdated" @update:bounds="boundsUpdated">
-        <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-marker :lat-lng="place.google_map" v-for="place in user_map_list" :key="place.place_name" @add="$nextTick(() => $event.target.openPopup())">
-          <l-icon :icon-anchor="staticAnchor" :options="iconOptions"> 
-            <img v-if="place.glamping" src="~/assets/Map/mark_g.png" class="icon" :style="{ width: dynamicSize + 'px' }"/>
-            <img v-else src="~/assets/Map/mark_c.png" class="icon" :style="{ width: dynamicSize + 'px' }"/>
-          </l-icon>
-          <!-- 豪華露營 -->
-          <l-popup v-if="place.glamping" :options="popupOptions_g" >
-            <div>
+  <client-only>
+    <l-map style="height: 100%; width: 100%" :zoom="zoom" :center="center" @update:zoom="zoomUpdated"
+      @update:center="centerUpdated" @update:bounds="boundsUpdated">
+      <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+      <l-marker :lat-lng="place.google_map" v-for="(place,index) in user_map_list" :key="place.place_name"
+        @add="$nextTick(() => $event.target.openPopup())">
+        <l-icon :icon-anchor="staticAnchor" :options="iconOptions">
+          <img v-if="place.glamping" src="~/assets/Map/mark_g.png" class="icon"
+            :style="{ width: dynamicSize + 'px' }" />
+          <img v-else src="~/assets/Map/mark_c.png" class="icon" :style="{ width: dynamicSize + 'px' }" />
+        </l-icon>
+        <!-- 豪華露營 -->
+        <l-popup v-if="place.glamping" :options="popupOptions_g">
+          <div>
+            <nuxt-link :to="getRouteLink(place)">
               <h1 class="pop_name">{{place.place_name}}</h1>
+            </nuxt-link>
               <h2 class="pop_num">{{place.number}}</h2>
               <div class="pop_bottom">
-                  <input @click.stop="toogleLike(place.place_name,$event)" class="pop_like_input"  type="checkbox" id="like_check" checked>
-                  <label class="pop_like" for="like_check">
-                      <img src="~/assets/Map/like.png" class="like" >    
-                      <img src="~/assets/Map/unlike.png" class="unlike">
-                  </label>
-                  <p class="pop_place"><span><img src="~/assets/Map/pop_icon.png"></span>{{place.place}}</p>
+                <input @click.self="toogleLike(place.place_name,$event)" class="pop_like_input" type="checkbox"
+                  :id="`like_check${index}_g`" checked="true">
+                <label class="pop_like" :for="`like_check${index}_g`">
+                  <img src="~/assets/Map/like.png" class="like">
+                  <img src="~/assets/Map/unlike.png" class="unlike">
+                </label>
+                <p class="pop_place"><span><img src="~/assets/Map/pop_icon.png"></span>{{place.place}}</p>
               </div>
-            </div>
-          </l-popup>
-          <!-- 普通露營 -->
-          <l-popup v-else :options="popupOptions_c" >
-            <div>
+          </div>
+        </l-popup>
+        <!-- 普通露營 -->
+        <l-popup v-else :options="popupOptions_c">
+          <div>
+            <nuxt-link :to="getRouteLink(place)">
               <h1 class="pop_name">{{place.place_name}}</h1>
-              <h2 class="pop_num">{{place.number}}</h2>
-              <div class="pop_bottom">
-                  <input class="pop_like_input"  type="checkbox" @click.stop="toogleLike(place.place_name,$event)" id="like_check" checked>
-                  <label class="pop_like" for="like_check">
-                      <img src="~/assets/Map/like.png" class="like" >    
-                      <img src="~/assets/Map/unlike.png" class="unlike">
-                  </label>
-                  <p class="pop_place"><span><img src="~/assets/Map/pop_icon.png"></span>{{place.place}}</p>
-              </div>
+            </nuxt-link>
+            <h2 class="pop_num">{{place.number}}</h2>
+            <div class="pop_bottom">
+              <input class="pop_like_input" type="checkbox" @click.self="toogleLike(place.place_name,$event)"
+                :id="`like_check${index}_c`" checked="true">
+              <label class="pop_like" :for="`like_check${index}_c`">
+                <img src="~/assets/Map/like.png" class="like">
+                <img src="~/assets/Map/unlike.png" class="unlike">
+              </label>
+              <p class="pop_place"><span><img src="~/assets/Map/pop_icon.png"></span>{{place.place}}</p>
             </div>
-          </l-popup>
-        </l-marker>
-      </l-map>
-    </client-only>
-    <!-- <div class="place" v-for="(section,key) in initial_map">
+          </div>
+        </l-popup>
+      </l-marker>
+    </l-map>
+  </client-only>
+  <!-- <div class="place" v-for="(section,key) in initial_map">
       <p>{{key}}</p>
       <button v-for="(place) in section" @click="addPop(key,place.place_name)"
         :class="{glamp: place.glamping, camp: !place.glamping}">{{place.number}}：{{place.place_name}}
       </button>
     </div> -->
-  </div>
-  
+</div>

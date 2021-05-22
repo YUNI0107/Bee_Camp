@@ -1,6 +1,6 @@
 <div class="camp_section">
   <Navbar :link_color="'white'" :logo_color="'none'" :back_color="'green_trans'" />
-  <CampLeftNav :camptype="camptype" :place="place" :rain_type="camp_info ? camp_info.type.rain_type : false" :indoor_type=" camp_info ? camp_info.type.indoor_type : false"/>
+  <CampLeftNav class="mobile_none_flex" :camptype="camptype" :place="place" :rain_type="camp_info ? camp_info.type.rain_type : false" :indoor_type=" camp_info ? camp_info.type.indoor_type : false"/>
   <div class="camp_inside_section">
     <div class="left">
       <div class="top_section">
@@ -89,10 +89,11 @@
     </div>
     <MapModal v-if="modal" @toggleModal="toggleModal" />
     <div class="right">
-      <div class="big_img">
+      <CampPicMobile class="mobile" :camplittle_img="camplittle_img" :camptype_pic="camptype_pic" :big_img="camp_info? camp_info.big_img :''"/>
+      <div class="big_img mobile_none">
           <img v-if="camp_info" :src="require(`../../../../assets/${camptype_pic}/${camp_info.big_img}`)">
       </div>
-      <div class="little_imgs">
+      <div class="little_imgs mobile_none_flex">
           <div class="little_block" @click="openPic(0)">
               <img v-if="camp_info" :src="require(`../../../../assets/${camptype_pic}/${camp_info.big_img}`)">
           </div>
@@ -103,5 +104,8 @@
     </div>
   </div>
   <PicZoom :current_pic="current_pic" @picZoom="picZoom" v-if="piczoom" />
-  <FooterSection />
+  <transition name="fade">
+    <InfoModal v-if="infomodal" @closeInfoModal="closeInfoModal" :modaltype="modaltype"/>
+  </transition>
+  <FooterSection class="camp_footer"/>
 </div>

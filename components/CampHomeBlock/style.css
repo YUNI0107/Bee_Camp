@@ -1,0 +1,131 @@
+.camp_block {
+  position: relative;
+  background-color: #2A7682;
+  height: 600px;
+  color: #fff;
+  transition: filter .3s;
+}
+
+.camp_block:hover{
+  filter: brightness(1.1);
+}
+
+.camp_block a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.top_section {
+  position: relative;
+  padding: 0 20px;
+  padding-top: 50px;
+  z-index: 2;
+}
+
+.top_section h1 {
+  font-size: 40px;
+}
+
+.top_section h1 span {
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.top_section h4 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.top_section .place_section {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.top_section .place_section .place_img {
+  width: 12px;
+  margin-right: 10px;
+}
+
+.top_section .place_section .place_img img {
+  width: 100%;
+}
+
+.top_section .line {
+  height: 1px;
+  background-color: #fff;
+  margin: 10px 0px;
+  margin-bottom: 10px;
+}
+
+.back_section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.back_section .camp_img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.back_section .camp_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to bottom, #2A7682 40%, transparent 100%);
+}
+
+.gradient.dark_back {
+  background: linear-gradient(to bottom, #26656F 40%, transparent 100%);
+}
+
+
+@media(max-width: 992px) {
+    .top_section {
+        padding: 30px 70px;
+      }
+
+      .top_section h1 {
+        font-size: 30px;
+      }
+      
+      
+      .top_section h4 {
+        font-size: 24px;
+      }
+
+    .gradient {
+        background: linear-gradient(to right, #2A7682 40%, transparent 100%);
+      }
+      
+      .gradient.dark_back {
+        background: linear-gradient(to right, #26656F 40%, transparent 100%);
+      }
+}
+
+
+@media(max-width: 768px){
+  .top_section {
+    padding: 30px 15px;
+  }
+}

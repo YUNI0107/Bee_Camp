@@ -8,6 +8,7 @@
   background-color: #2A7682;
   transition: .5s;
   transform-origin: center center;
+  user-select: none;
 }
 
 .camp_block:hover {
@@ -16,14 +17,26 @@
   transform-origin: center center;
 }
 
+.link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+}
+
 .top_section {
   position: absolute;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   top: 100px;
   padding: 0 20px;
   color: #fff;
   opacity: 0.8;
+  user-select: none;
 }
 
 .camp_block:hover .top_section {
@@ -40,7 +53,16 @@
   margin-left: 10px;
 }
 
+.top_section .title_info  a{
+  color: #fff;
+}
+.top_section .title_info  a:hover{
+  color: rgb(196, 196, 196);
+}
+
 .top_section .title_info h4 {
+  display: inline-block;
+  max-width: calc(100% - 40px);
   font-size: 25px;
   letter-spacing: 1px;
   font-weight: normal;
@@ -65,7 +87,7 @@
 .top_section .like_section {
   position: absolute;
   right: 0;
-  top: 50px;
+  top:55px;
   right: 20px;
 }
 
@@ -159,12 +181,17 @@
     width: 100%;
   }
 
+  .link{
+    display: block;
+  }
+
   .top_section {
     width: 100%;
     z-index: 2;
     top: 0px;
     padding: 10px 20px;
     opacity: 1;
+    pointer-events: none;
   }
 
   .top_section .title_info h1 {
@@ -174,6 +201,7 @@
   
   .top_section .title_info h4 {
     font-size: 22px;
+    pointer-events: auto;
   }
 
   .top_section .place_section {
@@ -185,6 +213,9 @@
     font-size: 12px;
   }
 
+  .top_section .like_section{
+    pointer-events: auto;
+  }
 
   .top_section .like_section img {
     width: 35px;
@@ -205,6 +236,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    pointer-events: auto;
   }
 
   .gradient {

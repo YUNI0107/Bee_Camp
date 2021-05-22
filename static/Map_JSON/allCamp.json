@@ -6,11 +6,11 @@
             "glamping": true,
             "big_img": "north/A_big_img.jpg",
             "img" : [
-                "north/A_img_1.jpg",
-                "north/A_img_2.jpg",
-                "north/A_img_3.jpg",
-                "north/A_img_4.jpg",
-                "north/A_img_5.jpg"
+                "north/A_img_1.jpeg",
+                "north/A_img_2.jpeg",
+                "north/A_img_3.jpeg",
+                "north/A_img_4.jpeg",
+                "north/A_img_5.jpeg"
             ],
             "place": "新北市白沙灣",
             "google_map": [25.287723, 121.511026],
@@ -18,7 +18,7 @@
                 "rain_type": true,
                 "indoor_type": true
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -85,7 +85,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -151,7 +151,7 @@
                 "rain_type": true,
                 "indoor_type": true
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -216,7 +216,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -281,7 +281,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -335,7 +335,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -388,7 +388,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -453,7 +453,7 @@
                 "rain_type": true,
                 "indoor_type": true
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -508,7 +508,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -588,7 +588,7 @@
                 "rain_type": true,
                 "indoor_type": true
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -642,7 +642,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": false,
@@ -721,7 +721,7 @@
                 "rain_type": false,
                 "indoor_type": true
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -772,9 +772,9 @@
             "img" : [
                 "central/A_img_1.jpg",
                 "central/A_img_2.jpg",
-                "central/A_img_3.jpg",
+                "central/A_img_3.jpeg",
                 "central/A_img_4.jpg",
-                "central/A_img_5.jpg"
+                "central/A_img_5.jpeg"
             ],
             "place": "苗栗縣三灣鄉",
             "google_map": [24.66822977918502, 120.95893894026004],
@@ -782,7 +782,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -850,7 +850,7 @@
             "img" : [
                 "central/B_img_1.jpg",
                 "central/B_img_2.jpg",
-                "central/B_img_3.jpg",
+                "central/B_img_3.JPG",
                 "central/B_img_4.jpg",
                 "central/B_img_5.jpg"
             ],
@@ -860,7 +860,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -918,7 +918,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -971,7 +971,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -1044,7 +1044,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -1097,7 +1097,7 @@
                 "east/B_img_2.jpg",
                 "east/B_img_3.jpg",
                 "east/B_img_4.jpg",
-                "east/B_img_5.jpg"
+                "east/B_img_5.jpeg"
             ],
             "place": "花蓮縣壽豐鄉",
             "google_map": [23.909784, 121.602147],
@@ -1105,7 +1105,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -1191,7 +1191,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -1256,13 +1256,13 @@
             "place_name": "波希米亞露營區" ,
             "number": "12",
             "glamping": true,
-            "big_img": "east/D_big_img.jpg",
+            "big_img": "east/D_big_img.jpeg",
             "img" : [
-                "east/D_img_1.jpg",
-                "east/D_img_2.jpg",
-                "east/D_img_3.jpg",
-                "east/D_img_4.jpg",
-                "east/D_img_5.jpg"
+                "east/D_img_1.jpeg",
+                "east/D_img_2.jpeg",
+                "east/D_img_3.jpeg",
+                "east/D_img_4.jpeg",
+                "east/D_img_5.jpeg"
             ],
             "place": "台東縣卑南鄉",
             "google_map": [22.806746382958682, 121.07178717911538],
@@ -1270,7 +1270,7 @@
                 "rain_type": true,
                 "indoor_type": true
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -1342,7 +1342,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -1407,7 +1407,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -1459,7 +1459,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -1510,7 +1510,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -1558,7 +1558,7 @@
                 "south/A_img_2.jpg",
                 "south/A_img_3.jpg",
                 "south/A_img_4.jpg",
-                "south/A_img_5.jpg"
+                "south/A_img_5.jpeg"
             ],
             "place": "高雄市美濃區",
             "google_map": [22.938528010517814, 120.58573993506242],
@@ -1566,7 +1566,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -1631,7 +1631,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": true,
                 "car": true,
                 "grass": true,
@@ -1691,10 +1691,10 @@
             "glamping": true,
             "big_img": "south/C_big_img.jpg",
             "img" : [
-                "south/C_img_1.jpg",
+                "south/C_img_1.jpeg",
                 "south/C_img_2.jpg",
                 "south/C_img_3.jpg",
-                "south/C_img_4.jpg",
+                "south/C_img_4.jpeg",
                 "south/C_img_5.jpg"
             ],
             "place": "台南市北門區",
@@ -1703,7 +1703,7 @@
                 "rain_type": true,
                 "indoor_type": true
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": false,
@@ -1769,7 +1769,7 @@
                 "rain_type": true,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -1841,7 +1841,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -1881,7 +1881,7 @@
             "place_name": "艾莉親子露營區" ,
             "number": "14",
             "glamping": false,
-            "big_img": "south/B_big_img.jpg",
+            "big_img": "south/B_big_img.JPG",
             "img" : [
                 "south/B_img_1.jpg",
                 "south/B_img_2.jpg",
@@ -1895,7 +1895,7 @@
                 "rain_type": false,
                 "indoor_type": true
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,
@@ -1955,7 +1955,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": false,
@@ -2039,7 +2039,7 @@
                 "rain_type": false,
                 "indoor_type": false
             },
-            "require":{
+            "require_list":{
                 "night": false,
                 "car": true,
                 "grass": true,

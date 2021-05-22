@@ -1,0 +1,25 @@
+<div class="camp_block">
+    <nuxt-link :to="route_link">
+      <div class="top_section">
+        <div class="title_info">
+          <h1 v-if="camp_info">{{ camp_info.number }}<span>{{ type_text }}</span></h1>
+            <h4 v-if="camp_info">{{ camp_info.place_name }}</h4>
+          <div class="place_section">
+            <div class="place_img">
+              <img src="../../assets/CampCategory/location.png" >
+            </div>
+            <p v-if="camp_info">{{ camp_info.place }}</p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <p class="detial_info" v-if="camp_info">{{ camp_info.key_des }}</p>
+      </div>
+      <div class="back_section">
+        <div class="gradient" :class="{'dark_back': dark_back}"></div>
+        <div class="camp_img">
+          <img v-if="camp_info" :src="require(`../../assets/${type_pic}/${camp_info.big_img}`)">
+        </div>
+      </div>
+    </nuxt-link>
+</div>
+

@@ -1,6 +1,7 @@
 .camp_cate{
     display: flex;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .mobile_none{
@@ -134,7 +135,7 @@
 
 .left .search_section .hide_section.show{
     height: 200px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .left .search_section .hide_section input{
@@ -285,6 +286,51 @@
     display: flex;
 }
 
+.right .hold_block.loading_in{
+    transition: none;
+    opacity: 0;
+}
+
+.right .hold_block.loading_out{
+    transition: opacity .5s;
+    opacity: 1;
+}
+
+.right .tips{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.right .tips.no_result{
+    display: flex;
+}
+
+.right .tips.loading{
+    display: flex;
+}
+
+.right .tips h2{
+    display: none;
+}
+
+.right .tips.no_result .loading_ani{
+    display: none;
+}
+
+
+.right .tips h2.no_result{
+    display: inline-block;
+}
+
+.right .tips .loading{
+    display: flex;
+}
 
 .right .direction_section{
     position: fixed;
@@ -328,9 +374,78 @@
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.cursor.cursor_name{
+    transform: scale(1.5) translate(-30%, -30%);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .right:hover .cursor{
     display: block;
 }
+
+/* loading動畫 */
+
+.loading_ani div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.loading_ani div:nth-child(1){
+    animation: loading_scale .8s -8s infinite;
+}
+.loading_ani div:nth-child(5){
+    animation: loading_5 .8s .8s infinite;
+    margin-left: -20px;
+}
+.loading_ani div:nth-child(2){
+    animation: loading_move .8s  infinite backwards;
+}
+.loading_ani div:nth-child(3){
+    animation: loading_move .8s  infinite backwards;
+}
+.loading_ani div:nth-child(4){
+    animation: loading_move .8s  infinite backwards;
+}
+
+@keyframes loading_scale{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes loading_move{
+    from{
+        transform: translateX(-25px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes loading_5{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+
+.fade-enter-active,.fade-leave-active{
+    transition: .5s;
+  }
+  
+  .fade-enter,.fade-leave-to{
+    opacity: 0;
+  }
+  
+
 
 @media(max-width: 768px){
     .camp_cate{
@@ -446,6 +561,11 @@
 
     .right:hover .cursor{
         display: none;
+    }
+
+    .right .tips{
+        margin: 50px 0;
+        font-size: 10px;
     }
     
 

@@ -20,6 +20,10 @@ export default {
                 id: this.product_info.id,
                 num: 1,
             })
+            this.$refs.r_img.classList.add("ani");
+            setTimeout(()=>{
+                this.$refs.r_img.classList.remove("ani");
+            },500)
         }
     },
     mounted() {

@@ -1,0 +1,55 @@
+.camppic_mobile{
+    position: relative;
+    width: calc(100% + 140px);
+    background-color: #fff;
+    margin-left: -70px;
+    overflow: hidden;
+    
+}
+.pic_container{
+    min-width: 800%;
+    width: 800%;
+    height: 45vh;
+    overflow: hidden;
+    background-color: rgba(230, 230, 250, 0.233);
+    display: flex;
+    transition: .5s;
+}
+
+.pic_container.no_trans{
+    transition: none !important;
+}
+
+.pic_block{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.pic_block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.dot_section{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dfdfdf;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active{
+    background-color: #2A7682;
+}

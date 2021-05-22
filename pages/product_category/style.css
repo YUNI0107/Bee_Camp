@@ -286,7 +286,7 @@
 
 .fade-item{
     display: inline-block;
-    transition: .8s;
+    transition: transform .8s;
 }
 
 
@@ -578,6 +578,14 @@
 
     .product_list{
         width: calc( (45vw * 2) + (10px * 2) );
+    }
+
+    .product_list span{
+        width: calc( (45vw * 2) + (10px * 2) );
+    }
+
+    .PD_item{
+        max-width: none;
     }
     
 

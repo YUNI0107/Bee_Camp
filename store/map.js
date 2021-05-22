@@ -13,9 +13,12 @@ export const mutations = {
   getUserMap(state) {
     state.user_map_list = JSON.parse(localStorage.getItem('user_map_list'));
   },
-  // 推入喜歡清單 playload[0] section playload[1] index
+  // 推入喜歡清單 playload[0] section playload[1] name
   likePush(state,playload){
-    let like = state.initial_map[playload[0]][playload[1]];
+    let index = state.initial_map[playload[0]].findIndex(
+      item => item.place_name == playload[1]
+    );
+    let like = state.initial_map[playload[0]][index];
     state.user_map_list.push(like);
   },
   clearUserLike(state,index){

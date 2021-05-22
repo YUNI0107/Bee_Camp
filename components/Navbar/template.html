@@ -6,13 +6,13 @@
       </div>
     </nuxt-link>
     <div class="navbar" :class="[link_color, {'mobile_show': mobile_nav}]" @click="mobile_nav = false">
-      <nuxt-link to="/" @click="mobileNav">
+      <nuxt-link to="/#About" @click="mobileNav">
         <p>關於露營蜂</p>
       </nuxt-link>
       <nuxt-link to="/camp_category" @click="mobileNav">
         <p>特色露營地</p>
       </nuxt-link>
-      <nuxt-link to="/">
+      <nuxt-link to="/#Map">
         <p>我的露營地圖</p>
       </nuxt-link>
       <nuxt-link to="/product_category" @click="mobileNav">

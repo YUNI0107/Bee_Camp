@@ -6,25 +6,25 @@
       <div class="search_section">
         <div class="mobile_people mobile">
           <div class="ani_people">
-            <img src="../../assets/CampCategory/ani_people.png">
+            <img src="../../assets/homepage/location_people.gif">
           </div>
         </div>
         <h2 class="map_info mobile">只要按愛心，就可以打點收藏露營地了喔！</h2>
         <div class="place_section">
-          <input type="radio" value="n" id="n" v-model="place">
+          <input type="radio" value="north" id="n" v-model="place">
           <label class="place_label" for="n">北</label>
-          <input type="radio" value="c" id="c" v-model="place">
+          <input type="radio" value="central" id="c" v-model="place">
           <label class="place_label" for="c">中</label>
-          <input type="radio" value="s" id="s" v-model="place">
+          <input type="radio" value="south" id="s" v-model="place">
           <label class="place_label" for="s">南</label>
-          <input type="radio" value="e" id="e" v-model="place">
+          <input type="radio" value="east" id="e" v-model="place">
           <label class="place_label" for="e">東</label>
         </div>
         <div class="cate_section">
-          <input type="checkbox" value="glamping" id="g" v-model="cate">
-          <label for="g">豪華露營</label>
-          <input type="checkbox" value="camping" id="c" v-model="cate">
-          <label for="c">紮營露營</label>
+          <input type="checkbox" value="glamping" id="glamping" v-model="cate">
+          <label for="glamping">豪華露營</label>
+          <input type="checkbox" value="camping" id="camping" v-model="cate">
+          <label for="camping">紮營露營</label>
         </div>
         <button class="hide_toggle" @click="show_more = !show_more">
           <img src="../../assets/CampCategory/slide.png" :class="{'show': show_more}">
@@ -34,11 +34,11 @@
             <p class="type">營位類型</p>
             <div class="choice">
               <div class="choice_block">
-                <input type="checkbox" value="indoor_type" id="indoor_type">
+                <input type="checkbox" value="indoor_type" id="indoor_type" v-model="type">
                 <label for="indoor_type">室內營帳</label>
               </div>
               <div class="choice_block">
-                <input type="checkbox" value="rain_type" id="rain_type">
+                <input type="checkbox" value="rain_type" id="rain_type" v-model="type">
                 <label for="rain_type">雨棚</label>
               </div>
             </div>
@@ -47,34 +47,34 @@
             <p class="require">條件選擇</p>
             <div class="choice">
               <div class="choice_block">
-                <input type="checkbox" value="night" id="night" v-model="night">
+                <input type="checkbox" value="night" id="night" v-model="require_list">
                 <label for="night">夜景</label>
               </div>
               <div class="choice_block">
-                <input type="checkbox" value="grass" id="grass" v-model="grass">
+                <input type="checkbox" value="grass" id="grass" v-model="require_list">
                 <label for="grass">大草皮</label>
               </div>
               <div class="choice_block">
-                <input type="checkbox" value="cloud" id="cloud">
+                <input type="checkbox" value="cloud" id="cloud" v-model="require_list">
                 <label for="cloud">雲海</label>
               </div>
               <div class="choice_block">
-                <input type="checkbox" value="rent" id="rent">
+                <input type="checkbox" value="rent" id="rent" v-model="require_list">
                 <label for="rent">可租裝備</label>
               </div>
               <div class="choice_block">
-                <input type="checkbox" value="river" id="river">
+                <input type="checkbox" value="river" id="river" v-model="require_list">
                 <label for="river">河邊</label>
               </div>
               <div class="choice_block">
-                <input type="checkbox" value="car" id="car">
+                <input type="checkbox" value="car" id="car" v-model="require_list">
                 <label for="car">車位</label>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="search_btn">
+      <button class="search_btn" @click="search">
         <div class="search_icon">
           <img src="../../assets/CampCategory/search.png" alt="搜尋">
         </div>
@@ -85,7 +85,7 @@
       <div class="little_map" @click="toggleModal(true)">
         <MapItem class="map_item" />
         <div class="ani_people mobile_none">
-          <img src="../../assets/CampCategory/ani_people.png">
+          <img src="../../assets/homepage/location_people.gif">
         </div>
       </div>
       <h2 class="map_info mobile_none">只要按愛心，<span><br /></span>
@@ -93,10 +93,25 @@
     </div>
   </div>
   <div class="right" ref="hold">
-    <div class="cursor" ref="cursor" :class="{'click': cusor_click}"></div>
-    <div class="hold_block" ref="hold_in">
-      <CampBlock v-for="(item,index) in showList" class="camp_block_out" :key="index" :dark_back="index % 2 !== 0"
-        :camp_info="item" :index="index" />
+    <div class="cursor" ref="cursor" :class="{'click': cusor_click , 'cursor_name': cursor_name}"></div>
+    <div class="tips" :class="{'no_result': no_result , 'loading': loading}">
+      <h2 :class="{'no_result': no_result}">所選擇區域，無符合條件之選項</h2>
+      <div class="loading_ani" :class="{'loading': loading}">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+    <div class="hold_block" ref="hold_in" :class="{'loading_in': loading, 'loading_out': !loading}">
+      <CampBlock v-for="(item,index) in showList" class="camp_block_out" 
+      :key="item.place_name" 
+      :dark_back="index % 2 !== 0"
+      :camp_info="item" :index="index" 
+      :place="place"
+      @cusorToggle="cusorToggle"
+      @likeModal="likeModal"/>
     </div>
     <div class="direction_section">
       <button class="left_btn click_btn" @click="scrollList('l')">
@@ -107,5 +122,8 @@
       </button>
     </div>
   </div>
+  <transition name="fade">
+    <InfoModal v-if="infomodal" @closeInfoModal="closeInfoModal" :modaltype="modaltype"/>
+  </transition>
   <MapModal v-if="modal" @toggleModal="toggleModal" />
 </div>

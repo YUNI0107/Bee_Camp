@@ -18,7 +18,7 @@ export default {
         popupAnchor: [0, -20],
       },
       // 刪除標記點
-      clear_timer: null,
+      clear_timer: null, 
     };
   },
   computed: {
@@ -82,18 +82,32 @@ export default {
       }
     },
     toogleLike(place_name,e){
-      console.log(e.target.checked);
       if(e.target.checked){
         clearTimeout(this.clear_timer);
       }else{
+        e.target.checked = false;
         let index = this.user_map_list.findIndex(
           item => item.place_name == place_name
         );
+        console.log(index,place_name);
         this.clear_timer = setTimeout(()=>{
           this.$store.commit("map/clearUserLike",index)
         }, 1000);
       }
-    }
+    },
+    // 取得連結
+    getRouteLink(place_info){
+      let section = [];
+      let index;
+      for(let key in this.initial_map){
+        index = this.initial_map[key].findIndex(element => element.place_name == place_info.place_name);
+        if(index !== -1) {
+          section.push(key)
+        }
+      }
+      let route_text = place_info.glamping == true ? 'glamping' : "camping"
+      return `/camp/${section[0]}/${route_text}/${place_info.number}`;
+    },
   },
   mounted() {
     // 初始化地圖

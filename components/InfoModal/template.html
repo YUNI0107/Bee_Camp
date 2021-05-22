@@ -1,0 +1,11 @@
+<div class="info_modal">
+    <div class="info_content">
+        <div class="info_img like" v-if="modaltype == 'like'">
+            <img src="../../assets/InfoModal/like.png">
+        </div>
+        <div class="info_img unlike" v-if="modaltype == 'unlike'">
+            <img src="../../assets/InfoModal/like.png">
+        </div>
+        <p>{{ info_text }}</p>
+    </div>
+</div>

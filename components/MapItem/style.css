@@ -2,11 +2,20 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    color: #333;
+}
+a{
+    text-decoration: none;
 }
 
 .pop_like_input {
-    appearance: none;
-    display: none;
+    /* appearance: none; */
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    opacity: 0;
+    display: block;
 }
 
 .pop_like {
@@ -42,6 +51,11 @@
     margin: 10px 0;
     color: #136770;
 }
+
+.pop_name:hover{
+    color: #777 !important;
+}
+
 
 .pop_num{
     display: flex;

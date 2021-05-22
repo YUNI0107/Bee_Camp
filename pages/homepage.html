@@ -1,83 +1,169 @@
-<div>
-  <Navbar :link_color="'black'" :logo_color="'normal'" :back_color="'gray'"/>
-  <section id="Banner">
+<div class="home_page">
+  <Navbar :link_color="'black'" :logo_color="'normal'" :back_color="'gray'" />
+  <section id="Banner" ref="banner">
     <div class="bannerpic">
-      <div class="light">
-        <img src="~/assets/homepage/light.svg" alt="light">
+      <div class="back_mountain">
+        <img class="banner_img" src="../assets/homepage/banner/back_mountain.png">
       </div>
-      <div class="leftimg">
-        <img src="~/assets/homepage/banner2.svg" alt="">
+      <div class="top_light">
+        <img :style="{transform: `rotate(${light_rotate}deg)`}" class="banner_img" src="../assets/homepage/banner/top_light.png">
       </div>
-      <div class="centerimg">
-        <img src="~/assets/homepage/banner3.svg" alt="">
+      <div class="middle_camp">
+        <img class="banner_img" src="../assets/homepage/banner/middle_camp.png">
       </div>
-      <div class="rightimg">
-        <img src="~/assets/homepage/banner4.svg" alt="">
+      <div class="left_section">
+        <div class="bbq_people">
+          <img class="banner_img" src="../assets/homepage/about_img2.gif">
+        </div>
+        <div class="banner_title">
+          <a href="#Product">
+            <h2>Equipment</h2>
+            <p>Read More</p>
+          </a>
+        </div>
       </div>
-      <h2>徜徉大自然，<br> 享受慢活時光</h2>
+      <div class="right_section">
+        <div class="map_people">
+          <img class="banner_img" src="../assets/homepage/banner/map_people.gif">
+        </div>
+        <div class="back_camp">
+          <img class="banner_img" src="../assets/homepage/banner/back_camp.png">
+        </div>
+        <div class="rabbit">
+          <img class="banner_img" src="../assets/homepage/banner/rabbit.png">
+        </div>
+        <div class="banner_title">
+          <a href="#Map">
+            <h2>PocketList</h2>
+            <p>Read More</p>
+          </a>
+        </div>
+      </div>
+      <div class="middle_section">
+        <div class="middle_people">
+          <img class="banner_img" src="../assets/homepage/banner/middle_people.gif">
+        </div>
+        <div class="banner_title">
+          <a href="#Camp">
+            <h2>Mystery</h2>
+            <p>Read More</p>
+          </a>
+        </div>
+        <div class="front_section">
+          <div class="left_grass">
+            <img class="banner_img" src="../assets/homepage/banner/left_grass.png">
+          </div>
+          <div class="right_grass">
+            <img class="banner_img" src="../assets/homepage/banner/right_grass.png">
+          </div>
+        </div>
+      </div>
+      <h2 class="big_banner_title">徜徉大自然<br> 享受慢活時光</h2>
     </div>
     <!-- 搜尋 -->
     <div class="searchbox">
-      <table>
-        <tbody>
-          <tr>
-            <td class="search_title"> 區域選擇</td>
-            <td>
-              <input type="checkbox" v-model="searcharea" value="north"> 北部<br>
-              <input type="checkbox" v-model="searcharea" value="west"> 中部<br>
-              <input type="checkbox" v-model="searcharea" value="south"> 南部<br>
-              <input type="checkbox" v-model="searcharea" value="east"> 東部
-            </td>
-          </tr>
-          <tr>
-            <td class="search_title">營位類型</td>
-            <td>
-              <input type="checkbox" v-model="cate" value="both"> 不拘<br>
-              <input type="checkbox" v-model="cate" value="outside"> 雨棚<br>
-              <input type="checkbox" v-model="cate" value="inside"> 室內營帳<br>
-            </td>
-          </tr>
-          <tr>
-            <td class="search_title">條件選擇</td>
-            <td>
-              <div>
-                <input type="checkbox" v-model="device" value="all"> 不拘<br>
-                <input type="checkbox" v-model="device" value="night"> 夜景<br>
-                <input type="checkbox" v-model="device" value="car"> 車停帳邊<br>
-              </div>
-              <div>
-                <input type="checkbox" v-model="device" value="grass"> 大草皮<br>
-                <input type="checkbox" v-model="device" value="cloud"> 雲海<br>
-                <input type="checkbox" v-model="device" value="rent"> 可租裝備<br>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="search_top">
+        <div class="search_block">
+          <h3 class="search_title">區域選擇</h3>
+          <div class="search_choice">
+            <div class="choice_block">
+              <input type="radio" v-model="place" value="north" id="north">
+              <label for="north">北部</label>
+            </div>
+            <div class="choice_block">
+              <input type="radio" v-model="place" value="central" id="central">
+              <label for="central">中部</label>
+            </div>
+            <div class="choice_block">
+              <input type="radio" v-model="place" value="south" id="south">
+              <label for="south">南部</label>
+            </div>
+            <div class="choice_block">
+              <input type="radio" v-model="place" value="east" id="east">
+              <label for="east">東部</label>
+            </div>
+          </div>
+        </div>
+        <div class="search_block">
+          <h3 class="search_title">營位類型</h3>
+          <div class="search_choice">
+            <div class="choice_block">
+              <input type="checkbox" v-model="cate" value="rain_type" id="rain_type">
+              <label for="rain_type">雨棚</label>
+            </div>
+            <div class="choice_block">
+              <input type="checkbox" v-model="cate" value="indoor_type" id="indoor_type">
+              <label for="indoor_type">室內營帳</label>
+            </div>
+          </div>
+        </div>
+        <div class="hide_toogle" :class="{'show': show_slide}" @click="slideToggle">
+          <img src="../assets/CampCategory/slide.png">
+        </div>
+        <div class="search_block hide_block" :class="{'show': show_slide}">
+          <h3 class="search_title">條件選擇</h3>
+          <div class="search_choice">
+            <div class="choice_block">
+              <input type="checkbox" value="night" id="night" v-model="require_list">
+              <label for="night">夜景</label>
+            </div>
+            <div class="choice_block">
+              <input type="checkbox" value="grass" id="grass" v-model="require_list">
+              <label for="grass">大草皮</label>
+            </div>
+            <div class="choice_block">
+              <input type="checkbox" value="cloud" id="cloud" v-model="require_list">
+              <label for="cloud">雲海</label>
+            </div>
+            <div class="choice_block">
+              <input type="checkbox" value="rent" id="rent" v-model="require_list">
+              <label for="rent">可租裝備</label>
+            </div>
+            <div class="choice_block">
+              <input type="checkbox" value="river" id="river" v-model="require_list">
+              <label for="river">河邊</label>
+            </div>
+            <div class="choice_block">
+              <input type="checkbox" value="car" id="car" v-model="require_list">
+              <label for="car">車位</label>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="searchline"></div>
-      <button>搜尋</button>
+      <button @click="searchCamp">
+        <div class="search_img">
+          <img src="../assets/homepage/search.png" alt="search">
+        </div>
+        <span>搜尋</span>
+      </button>
     </div>
 
   </section>
   <!-- 關於露營蜂 -->
   <section id="About">
-    <h1>關於露營蜂</h1>
-    <p>如蜜蜂般，一起搭件屬於全家人的快樂時光，享受與大自然為舞之樂！</p>
-    <br><br>
-    <div class="aboutus">
-      <div>
-        <div class="aboutimg">
-          <img src="~/assets/about1.svg" alt=""></div>
+    <div class="section_title">
+      <h1>關於露營蜂</h1>
+      <p>如蜜蜂般，一起搭件屬於全家人的快樂時光，享受與大自然為舞之樂！</p>
+    </div>
+    <div class="about_content">
+      <div class="left_info">
+        <div class="left_img">
+          <img :class="{'show': current_about == 0}" :src="require(`~/assets/homepage/about_img0.gif`)">
+          <img :class="{'show': current_about == 1}" :src="require(`~/assets/homepage/about_img1.gif`)">
+          <img :class="{'show': current_about == 2}" :src="require(`~/assets/homepage/about_img2.gif`)">
+        </div>
       </div>
-      <div>
+      <div class="right_info">
         <ul>
-          <li v-for="(item,index) in about" :key="index">
-            <div><img :src="item.img" alt=""></div>
-            <div>
+          <li v-for="(item,index) in about" :key="index" @mouseover="changeAbout(index)">
+            <div class="about_little_img">
+              <img :src="item.img">
+            </div>
+            <div class="text_content">
               <h2>{{item.title}}</h2>
               <p> {{item.content1}}<br>{{item.content2}}</p>
             </div>
-            <br>
           </li>
         </ul>
       </div>
@@ -86,72 +172,77 @@
 
   <!-- 露營地 -->
   <section id="Camp">
-    <h1>今晚睡帳棚！必訪特色露營地</h1>
-    <p>翩翩飛舞的螢火蟲，滿天星光，<br>
-      不論是只要人到場的豪華網美露營地，或是透過親自動手紮營的營地，都讓能讓人體驗親近大自然的生活。</p>
-    <br><br>
-    <Camp />
-    <nuxt-link to="/camp_category/">
-      <div class="LearnMore">
-        <div> 看更多</div>
-        <div><img src="../assets/arrow.svg" alt="">
-
-        </div>
+    <div class="section_title">
+      <h1>今晚睡帳棚！必訪特色露營地</h1>
+      <p>翩翩飛舞的螢火蟲，滿天星光，<br>
+        不論是只要人到場的豪華網美露營地，或是透過親自動手紮營的營地，都讓能讓人體驗親近大自然的生活。</p>
+    </div>
+    <div class="camp_list">
+      <div class="camp_button">
+        <button :class="{'choice': !glamping_button}" @click="changeCamp(true)">豪華露營</button>
+        <button :class="{'choice': glamping_button}" @click="changeCamp(false)">紮營露營</button>
       </div>
-    </nuxt-link>
-
-    <!-- 地圖 -->
+      <CampHomeBlock v-for="(item,index) in camp_info_list" class="camp_block" :dark_back="index % 2 == 0" :key="index"
+        :camp_info="item" />
+      </div>
+      <div class="learn_more">
+      <div class="camp_car_img">
+        <img src="../assets/homepage/yellow_car.png" alt="yellow_car">
+      </div>
+      <nuxt-link to="/camp_category" class="learn_link">
+        <p> 看更多</p>
+        <div class="learn_img">
+          <img src="../assets/homepage/arrow.svg">
+        </div>
+      </nuxt-link>
+    </div>
   </section>
 
   <!-- 地圖 -->
   <section id="Map">
-    <h1>地圖</h1>
-    <p>建立屬於自己的攻略露營計畫，讓週末與假日時光充滿快樂與挑戰！</p>
+    <div class="section_title">
+      <h1>口袋地圖</h1>
+      <p>建立屬於自己的攻略露營計畫，讓週末與假日時光充滿快樂與挑戰！</p>
+    </div>
+    <div class="map_content">
+      <MapItem class="map_item" />
+      <h3 class="no_maplist" :class="{'show': user_map_list == 0}">還沒有新增地標，<nuxt-link to="/camp_category">快去新增吧！
+        </nuxt-link>
+      </h3>
+      <div class="people_ani">
+        <img src="../assets/homepage/location_people.gif">
+      </div>
+    </div>
   </section>
 
   <!-- 產品 -->
   <section id="Product">
-    <h1>露營用品</h1>
-    <p>享受快樂露營時光必備的用具！</p>
-    <br>
+    <div class="section_title">
+      <h1>露營用品</h1>
+      <p>享受快樂露營時光必備的用具！</p>
+    </div>
+
     <!--商品種類頁籤-->
-    <div id="PD_category">
-      <div class="cate_item">
-        <div class="cate_img item_camp"></div>
-        <p>帳篷類</p>
-      </div>
-      <div class="cate_item">
-        <div class="cate_img item_kitchen"></div>
-        <p>客廳/廚房類</p>
-      </div>
-      <div class="cate_item">
-        <div class="cate_img item_dishes"></div>
-        <p>料理類</p>
-      </div>
-      <div class="cate_item">
-        <div class="cate_img item_light"></div>
-        <p>照明類</p>
-      </div>
-      <div class="cate_item">
-        <div class="cate_img item_inside"></div>
-        <p>帳內類</p>
-      </div>
-      <div class="cate_item">
-        <div class="cate_img item_other"></div>
-        <p>其他</p>
+    <div class="category">
+      <div class="cate_item" v-for="(item,index) in cate_list" :key="index" @click="changeRecommend(index)">
+        <div class="cate_img" :class="{'active': current_cate == index}">
+          <img :src="require(`../assets/ProductLeftNav/${item.cate}.png`)">
+        </div>
+        <p>{{ item.cate_text }}</p>
       </div>
     </div>
     <div class="recommend_list">
-      <ProductListBlock v-for="product in recommend_product_list" :key="product.id" :product_info="product" class="recommend_item"/>
+      <ProductListBlock v-for="product in recommend_show_list" :key="product.id" :product_info="product"
+        class="recommend_item" />
     </div>
-    <nuxt-link to="/product_category/">
-      <div class="LearnMore">
-        <div> 看更多</div>
-        <div>
-          <img src="../assets/arrow.svg" alt="">
+    <div class="learn_more">
+      <nuxt-link to="/product_category" class="learn_link">
+        <p> 看更多</p>
+        <div class="learn_img">
+          <img src="../assets/homepage/arrow.svg">
         </div>
-      </div>
-    </nuxt-link>
+      </nuxt-link>
+    </div>
   </section>
-  <!-- <FooterSection/> -->
+  <FooterSection />
 </div>
