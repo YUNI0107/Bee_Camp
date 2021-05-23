@@ -31,7 +31,7 @@ export default {
         
     },
     mounted(){
-        axios.get("/productInfo.json").then(res=>{
+        axios.get("/Bee_Camp/productInfo.json").then(res=>{
             this.name = res.data[this.product.id - 1].name
             this.price = res.data[this.product.id - 1].price
         })

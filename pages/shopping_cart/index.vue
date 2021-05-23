@@ -134,7 +134,7 @@ export default {
         vue_this.step = 1;
       }
     });
-    axios.get("/productprice.json").then(res => {
+    axios.get("/Bee_Camp/productprice.json").then(res => {
       this.price_list = res.data;
     });
   },

@@ -155,7 +155,7 @@ export default {
     mql_2.addEventListener("change", this.changeRow_2);
     this.link_info = [];
     this.link_list = [];
-    axios.get("/productInfo.json").then(res => {
+    axios.get("/Bee_Camp/productInfo.json").then(res => {
       this.all_product_list = res.data;
       this.createLinkList();
     });

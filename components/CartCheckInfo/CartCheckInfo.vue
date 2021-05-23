@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     getList() {
-      axios.get("/productInfo.json").then(res => {
+      axios.get("/Bee_Camp/productInfo.json").then(res => {
         this.cart_list.forEach(item => {
           let each_item = res.data.filter(product => product.id == item.id)[0];
           this.check_list.push(each_item);

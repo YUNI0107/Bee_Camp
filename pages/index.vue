@@ -174,14 +174,14 @@ export default {
     mql_s.addEventListener("change", this.recommendLength);
     this.recommendLength(mql_l);
 
-    axios.get("/productInfo.json").then(res => {
+    axios.get("/Bee_Camp/productInfo.json").then(res => {
       this.all_list = res.data;
       this.recommend_product_list = res.data.filter(
         element => element.cate == this.cate_list[this.current_cate].cate
       );
     });
 
-    axios.get("/Map_JSON/allCamp.json").then(res => {
+    axios.get("/Bee_Camp/Map_JSON/allCamp.json").then(res => {
       this.camp_list = res.data.central;
     });
 

@@ -54,6 +54,11 @@
     appearance: none;
 }
 
+.left input[type="radio"]{
+    display: none;
+    appearance: none;
+}
+
 .left .search_section .place_label{
     display: flex;
     justify-content: center;

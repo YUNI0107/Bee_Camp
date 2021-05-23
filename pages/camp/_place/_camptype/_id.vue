@@ -116,7 +116,7 @@ export default {
   },
   mounted() {
     let glamping = this.camptype == "glamping" ? true : false;
-    axios.get("/Map_JSON/allCamp.json").then(res => {
+    axios.get("/Bee_Camp/Map_JSON/allCamp.json").then(res => {
       // 取編號Ｆ相同的資料
       let numberList = res.data[this.place].filter(
         element => element.number == this.number

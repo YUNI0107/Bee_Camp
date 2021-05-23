@@ -30,7 +30,7 @@ export const mutations = {
 export const actions = {
   async getInitialMap({commit}) {
     let mapInitialData;
-    await axios.get('/Map_JSON/allCamp.json').then(res => {
+    await axios.get('/Bee_Camp/Map_JSON/allCamp.json').then(res => {
       mapInitialData = res.data;
     })
     commit('addInitialMap', mapInitialData)

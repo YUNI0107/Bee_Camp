@@ -82,7 +82,7 @@ export default {
         }
     },
     mounted(){
-        axios.get("/productInfo.json").then(res=>{
+        axios.get("/Bee_Camp/productInfo.json").then(res=>{
             this.product_info = res.data.filter(item => item.id == this.id)[0];
             this.cate = this.product_info.cate;
             this.smallpic_num = this.product_info.smallpic_num;
