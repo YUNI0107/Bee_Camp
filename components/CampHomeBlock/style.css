@@ -4,6 +4,7 @@
   height: 600px;
   color: #fff;
   transition: filter .3s;
+  cursor: pointer;
 }
 
 .camp_block:hover{
@@ -16,14 +17,11 @@
   width: 100%;
   height: 100%;
   display: block;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.camp_block .hold_content{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
 
 .top_section {
   position: relative;
@@ -131,6 +129,8 @@
       .gradient.dark_back {
         background: linear-gradient(to right, #26656F 40%, transparent 100%);
       }
+
+      
 }
 
 
