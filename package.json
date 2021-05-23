@@ -1,12 +1,12 @@
 {
-  "name": "Bee_Camp",
+  "name": "bee_camp",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "generate": "nuxt generate",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "axios": "^0.21.1",
