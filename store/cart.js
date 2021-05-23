@@ -2,34 +2,14 @@ export const state = () => ({
     cart_list: [
        {
             id: 1,
-            num: 2,
-       },
-       {
-            id: 2,
-            num: 10,
-       },
-       {
-            id: 3,
-            num: 3,
+            num: 1,
        },
        {
             id: 4,
             num: 1,
        },
        {
-            id: 7,
-            num: 2,
-       },
-       {
-            id: 8,
-            num: 2,
-       },
-       {
-            id: 9,
-            num: 2,
-       },
-       {
-            id: 14,
+            id: 12,
             num: 2,
        },
 

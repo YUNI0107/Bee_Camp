@@ -19,6 +19,12 @@
   position: relative;
 }
 
+.camp_block .hold_content{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 .top_section {
   position: relative;
   padding: 0 20px;

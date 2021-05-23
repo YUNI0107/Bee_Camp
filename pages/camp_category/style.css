@@ -89,6 +89,7 @@
 
 .left .search_section .cate_section input{
     appearance: none;
+    display: none;
 }
 
 .left .search_section .cate_section label{
@@ -147,6 +148,7 @@
 .left .search_section .hide_section input{
     position: relative;
     appearance: none;
+    border: none;
     width: 15px;
     height: 15px;
     border-radius: 3px;
