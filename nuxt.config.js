@@ -40,6 +40,7 @@ export default {
   },
   target: 'static',
   router: {
-    base: '/Bee_Camp/'
+    base: '/Bee_Camp/',
+    mode: 'hash'
   }
 }

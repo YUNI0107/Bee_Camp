@@ -23,7 +23,8 @@ export default {
             this.$refs.r_img.classList.add("ani");
             setTimeout(()=>{
                 this.$refs.r_img.classList.remove("ani");
-            },500)
+                this.$router.push({ path: 'shopping_cart' })
+            },800)
         }
     },
     mounted() {
