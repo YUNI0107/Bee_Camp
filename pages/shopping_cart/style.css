@@ -477,6 +477,10 @@
     transform: translateX(-100%);
   }
 
+  .right_pay_section button {
+    width: 100%;
+  }
+
 }
 
 @media(max-width: 768px) {

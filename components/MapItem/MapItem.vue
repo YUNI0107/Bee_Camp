@@ -1,11 +1,13 @@
 <script>
 // mapbox地圖
 // https://api.mapbox.com/styles/v1/amy123chou/ckia7td6o0erk19o0287jp25j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYW15MTIzY2hvdSIsImEiOiJja2lhNzZ6a2kwNHllMnhzM3E0MzB3YWRhIn0.-4gXvvpmI9PnreAp2v3E5Q
+
+// https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
 export default {
   data() {
     return {
       url:
-        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://api.mapbox.com/styles/v1/amy123chou/ckia7td6o0erk19o0287jp25j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYW15MTIzY2hvdSIsImEiOiJja2lhNzZ6a2kwNHllMnhzM3E0MzB3YWRhIn0.-4gXvvpmI9PnreAp2v3E5Q",
       zoom: 8,
       center: [23.97462124512251, 120.98196632771392],
       bounds: null,

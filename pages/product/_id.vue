@@ -79,6 +79,10 @@ export default {
                 id: Number(this.id),
                 num: this.num,
             })
+            this.$refs.num.classList.add("num_ani")
+            setTimeout(()=>{
+                this.$refs.num.classList.remove("num_ani")
+            },500)
         }
     },
     mounted(){

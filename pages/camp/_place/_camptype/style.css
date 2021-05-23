@@ -132,6 +132,7 @@
 
 .like_section input[type="checkbox"] {
   appearance: none;
+  display: none;
 }
 
 .like_section input[type="checkbox"]~label .like {

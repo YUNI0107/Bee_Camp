@@ -52,6 +52,7 @@
 
 .left .search_section .place_section input{
     appearance: none;
+    display: none;
 }
 
 .left input[type="radio"]{
@@ -466,7 +467,7 @@
 
     .left{
         flex: 1;
-        height: 400px;
+        height: auto;
         padding: 0;
         padding-bottom: 30px;
         display: flex;

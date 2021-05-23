@@ -56,12 +56,12 @@
 
           <p v-if="invoice == 'phone'">輸入手機載具條碼</p>
 
-          <input type="text" v-model="invoice_barcode" v-if="invoice == 'phone'" />
+          <input type="text" v-model="invoice_barcode" v-if="invoice == 'phone'" inputmode="numeric"/>
           <br>
           <input type="radio" id="people_invoice" v-model="invoice" value="people">
           <label for="people_invoice">電子發票（自然人憑證歸戶）</label>
           <p v-if="invoice == 'people'">輸入自然人憑證條碼</p>
-          <input type="text" v-model="invoice_barcode" v-if="invoice == 'people'" />
+          <input type="text" v-model="invoice_barcode" v-if="invoice == 'people'" inputmode="numeric"/>
           <br>
           <input type="radio" id="tax_invoice" v-model="invoice" value="tax">
           <label for="tax_invoice">統編發票</label>
@@ -73,11 +73,11 @@
           <p class="warn" :class="{ 'warnshow': user_name == '' && check_class }">未填寫！</p>
           <br>
           <label for="phone">手機</label>
-          <input type="text" id="phone" v-model="user_phone">
+          <input type="text" id="phone" v-model="user_phone" inputmode="tel">
           <p class="warn" :class="{ 'warnshow': user_phone == '' && check_class }">未填寫！</p>
           <br>
           <label for="mail">信箱</label>
-          <input type="text" id="mail" v-model="user_mail">
+          <input type="text" id="mail" v-model="user_mail" inputmode="email">
           <p class="warn" :class="{ 'warnshow': user_mail == '' && check_class }">未填寫！</p>
           <br>
           <label for="adress">地址</label>

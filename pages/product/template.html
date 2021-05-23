@@ -32,7 +32,7 @@
             <button class="minus" @click="toggleNum('-')">
               <h4>-</h4>
             </button>
-            <h3>{{ num }}</h3>
+            <h3 ref="num">{{ num }}</h3>
             <button class="plus"  @click="toggleNum('+')">
               <h4>+</h4>
             </button>
