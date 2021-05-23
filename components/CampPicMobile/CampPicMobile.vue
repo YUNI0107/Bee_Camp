@@ -25,6 +25,9 @@ export default {
   watch:{
     camplittle_img(){
       this.container_width = this.$refs.container.offsetWidth;
+    },
+    container_width(){
+      this.slidePic(0)
     }
   },
   methods: {
@@ -102,7 +105,7 @@ export default {
   mounted() {
     this.$nextTick(() => {
       this.resizeChange();
-      this.slide_distance = -this.container_width;
+      this.slide_distance = -this.$refs.container.offsetWidth;
     });
     window.addEventListener("resize", this.resizeChange);
   },

@@ -15,13 +15,13 @@
           <div class="line"></div>
           <p class="detial_info" v-if="camp_info">{{ camp_info.key_des }}</p>
         </div>
-        <div class="back_section">
-          <div class="gradient" :class="{'dark_back': dark_back}"></div>
-          <div class="camp_img">
-            <img v-if="camp_info" :src="require(`../../assets/${type_pic}/${camp_info.big_img}`)">
-          </div>
-        </div>
       </div>
     </nuxt-link>
+    <div class="back_section">
+      <div class="gradient" :class="{'dark_back': dark_back}"></div>
+      <div class="camp_img">
+        <img v-if="camp_info" :src="require(`../../assets/${type_pic}/${camp_info.big_img}`)">
+      </div>
+    </div>
 </div>
 
