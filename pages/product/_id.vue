@@ -82,7 +82,8 @@ export default {
             this.$refs.num.classList.add("num_ani")
             setTimeout(()=>{
                 this.$refs.num.classList.remove("num_ani")
-            },500)
+                this.$router.push({ path: '/shopping_cart' })
+            },800)
         }
     },
     mounted(){
